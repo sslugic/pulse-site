@@ -19,13 +19,18 @@
   var q = new URLSearchParams(location.search);
   var friend = (q.get('f') || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 12).toUpperCase();
   var crew = (q.get('c') || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 12).toUpperCase();
-  var code = friend || crew;
+  var ref = (q.get('r') || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 12).toUpperCase();
+  var code = friend || crew || ref;
   if (code) document.getElementById('code').textContent = code;
   if (crew) {
     document.getElementById('title').textContent = 'Crew invite';
     document.getElementById('lead').textContent = 'You were invited to a crew on Pulse, the AI fitness arcade. Crews keep a shared streak alive: log every day, together.';
   }
-  var link = code ? 'pulse://' + (crew ? 'join/' : 'add/') + code : 'pulse://';
+  if (ref && !friend && !crew) {
+    document.getElementById('title').textContent = 'Free AI credits';
+    document.getElementById('lead').textContent = 'A friend invited you to Pulse, the AI fitness arcade. Sign in, enter this code in Crew → Credits → I have a code, and you both get 25 free AI credits.';
+  }
+  var link = code ? 'pulse://' + (crew ? 'join/' : ref && !friend ? 'r/' : 'add/') + code : 'pulse://';
   document.getElementById('open').href = link;
 </script>
 </main></body></html>
