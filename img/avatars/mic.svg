@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+  <radialGradient id="mibg" cx="50%" cy="35%" r="75%">
+    <stop offset="0" stop-color="#4A1260"/><stop offset="1" stop-color="#14051C"/>
+  </radialGradient>
+</defs>
+<rect width="100" height="100" fill="url(#mibg)"/>
+<g stroke="#0B0B0C" stroke-opacity="0.22" stroke-width="1.2">
+  <path d="M0 12H100M0 26H100M0 40H100M0 54H100M0 68H100M0 82H100M0 96H100"/>
+  <path d="M20 0V12M60 0V12M40 12V26M80 12V26M20 26V40M60 26V40M40 40V54M80 40V54M20 54V68M60 54V68M40 68V82M80 68V82M20 82V96M60 82V96"/>
+</g>
+<g fill="#FFFFFF" fill-opacity="0.35"><circle cx="12" cy="20" r="1.6"/><circle cx="86" cy="16" r="1.2"/><circle cx="90" cy="78" r="1.8"/><circle cx="9" cy="70" r="1.1"/></g>
+<defs><radialGradient id="migrille" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C9CDD0"/><stop offset="1" stop-color="#5A6066"/></radialGradient>
+<linearGradient id="mibody" x1="0" x2="1"><stop offset="0" stop-color="#3A3F44"/><stop offset="0.4" stop-color="#6A7074"/><stop offset="1" stop-color="#1C1F21"/></linearGradient></defs>
+<path d="M22 26a30 30 0 0 0 0 30M14 20a40 40 0 0 0 0 42M78 26a30 30 0 0 1 0 30M86 20a40 40 0 0 1 0 42" fill="none" stroke="#38D6FF" stroke-width="3" stroke-linecap="round"/>
+<path d="M42 48h16l-3 40h-10z" fill="url(#mibody)" stroke="#0B0B0C" stroke-width="4" stroke-linejoin="round"/>
+<rect x="40" y="44" width="20" height="7" rx="2" fill="#FFD23F" stroke="#0B0B0C" stroke-width="3"/>
+<circle cx="50" cy="30" r="17" fill="url(#migrille)" stroke="#0B0B0C" stroke-width="4"/>
+<path d="M36 24h28M34 30h32M36 36h28M44 14v32M50 13v34M56 14v32" stroke="#0B0B0C" stroke-width="1.2" opacity="0.45"/>
+<path d="M40 22a12 12 0 0 1 7-5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/></svg>

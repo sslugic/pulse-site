@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+  <radialGradient id="tkbg" cx="50%" cy="35%" r="75%">
+    <stop offset="0" stop-color="#2B2B2B"/><stop offset="1" stop-color="#0B0B0C"/>
+  </radialGradient>
+</defs>
+<rect width="100" height="100" fill="url(#tkbg)"/>
+<g stroke="#0B0B0C" stroke-opacity="0.22" stroke-width="1.2">
+  <path d="M0 12H100M0 26H100M0 40H100M0 54H100M0 68H100M0 82H100M0 96H100"/>
+  <path d="M20 0V12M60 0V12M40 12V26M80 12V26M20 26V40M60 26V40M40 40V54M80 40V54M20 54V68M60 54V68M40 68V82M80 68V82M20 82V96M60 82V96"/>
+</g>
+<g fill="#FFFFFF" fill-opacity="0.35"><circle cx="12" cy="20" r="1.6"/><circle cx="86" cy="16" r="1.2"/><circle cx="90" cy="78" r="1.8"/><circle cx="9" cy="70" r="1.1"/></g>
+<defs><radialGradient id="tkgold" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#FFF1A8"/><stop offset="0.5" stop-color="#F2B92B"/><stop offset="1" stop-color="#A86A00"/></radialGradient></defs>
+<circle cx="50" cy="52" r="38" fill="#9CFF2E" opacity="0.18"/>
+<circle cx="50" cy="52" r="34" fill="url(#tkgold)" stroke="#0B0B0C" stroke-width="4"/>
+<circle cx="50" cy="52" r="26" fill="none" stroke="#7A4A00" stroke-width="2.5"/>
+<path d="M40 38h7l3 8 3-8h7l-7 14v14h-6V52z" fill="#1C1F21" stroke="#0B0B0C" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#7A4A00"><circle cx="50" cy="22" r="1.6"/><circle cx="50" cy="82" r="1.6"/><circle cx="20" cy="52" r="1.6"/><circle cx="80" cy="52" r="1.6"/><circle cx="29" cy="31" r="1.4"/><circle cx="71" cy="31" r="1.4"/><circle cx="29" cy="73" r="1.4"/><circle cx="71" cy="73" r="1.4"/></g>
+<path d="M30 34a28 28 0 0 1 14-9" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/></svg>

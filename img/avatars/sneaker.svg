@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+  <radialGradient id="snbg" cx="50%" cy="35%" r="75%">
+    <stop offset="0" stop-color="#1B2D6B"/><stop offset="1" stop-color="#080E24"/>
+  </radialGradient>
+</defs>
+<rect width="100" height="100" fill="url(#snbg)"/>
+<g stroke="#0B0B0C" stroke-opacity="0.22" stroke-width="1.2">
+  <path d="M0 12H100M0 26H100M0 40H100M0 54H100M0 68H100M0 82H100M0 96H100"/>
+  <path d="M20 0V12M60 0V12M40 12V26M80 12V26M20 26V40M60 26V40M40 40V54M80 40V54M20 54V68M60 54V68M40 68V82M80 68V82M20 82V96M60 82V96"/>
+</g>
+<g fill="#FFFFFF" fill-opacity="0.35"><circle cx="12" cy="20" r="1.6"/><circle cx="86" cy="16" r="1.2"/><circle cx="90" cy="78" r="1.8"/><circle cx="9" cy="70" r="1.1"/></g>
+<g transform="rotate(-10 50 55)">
+<path d="M14 72V40c0-6 4-10 10-10h14l4 14c8 2 20 6 30 10 8 3 14 8 14 14v4z" fill="#F4F1E8" stroke="#0B0B0C" stroke-width="4" stroke-linejoin="round"/>
+<path d="M24 30h14l3 12H26z" fill="#FF4141" stroke="#0B0B0C" stroke-width="3" stroke-linejoin="round"/>
+<path d="M30 62c12-10 26-10 42-4" fill="none" stroke="#2B5CFF" stroke-width="6" stroke-linecap="round"/>
+<path d="M30 62c12-10 26-10 42-4" fill="none" stroke="#0B0B0C" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+<path d="M40 46l6 3M43 42l7 3M47 50l6 3" stroke="#0B0B0C" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M10 72h80c2 0 3 2 3 4v2c0 2-1 4-3 4H12c-2 0-3-2-3-4v-2c0-2 1-4 3-4z" fill="#FF4141" stroke="#0B0B0C" stroke-width="4" stroke-linejoin="round"/>
+<path d="M14 77h74" stroke="#F4F1E8" stroke-width="2" stroke-dasharray="4 3"/>
+</g>
+<path d="M76 22l4-8M84 28l8-4M70 18l1-8" stroke="#FFD23F" stroke-width="3" stroke-linecap="round"/></svg>
