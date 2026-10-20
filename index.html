@@ -100,13 +100,20 @@
 <section id="screens">
   <div class="wrap">
     <h2 class="section-title outline">STRAIGHT FROM THE TUNNEL</h2>
-    <p class="section-sub">Swipe through the app.</p>
-    <div class="shots">
+    <p class="section-sub">A quick tour of the app. Tap the arrows or swipe to jump ahead.</p>
+    <div class="shots" aria-roledescription="carousel" aria-label="App screenshots">
+      <button class="arrow prev" type="button" aria-label="Previous screen">‹</button>
+      <div class="viewport">
+        <div class="track">
       <figure><img src="img/1-hq.jpg" alt="HQ: daily calories, macros and streak" loading="lazy" width="900" height="1951"><figcaption>HQ</figcaption></figure>
       <figure><img src="img/2-coach.jpg" alt="Coach: chat with your AI coach" loading="lazy" width="900" height="1951"><figcaption>COACH</figcaption></figure>
       <figure><img src="img/3-arcade.jpg" alt="Stress Arcade: chests and brain games" loading="lazy" width="900" height="1951"><figcaption>ARCADE</figcaption></figure>
       <figure><img src="img/4-stats.jpg" alt="Stats: trends and history" loading="lazy" width="900" height="1951"><figcaption>STATS</figcaption></figure>
       <figure><img src="img/5-ranks.jpg" alt="Ranks: the Street Crew ladder" loading="lazy" width="900" height="1951"><figcaption>RANKS</figcaption></figure>
+        </div>
+      </div>
+      <button class="arrow next" type="button" aria-label="Next screen">›</button>
+      <div class="dots" role="tablist" aria-label="Choose a screen"></div>
     </div>
   </div>
 </section>
@@ -189,5 +196,78 @@
   </div>
 </footer>
 
+<script>
+  // Screenshot slideshow: the active screen sits centred and advances on its own; arrows, dots,
+  // swipes and taps on a neighbour jump to a screen. Pauses on hover, focus and when off-screen.
+  (function () {
+    var root = document.querySelector('.shots');
+    if (!root) return;
+    var viewport = root.querySelector('.viewport');
+    var track = root.querySelector('.track');
+    var slides = Array.prototype.slice.call(track.children);
+    var dots = root.querySelector('.dots');
+    var i = 0, timer = null, hover = false, visible = true;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    slides.forEach(function (fig, n) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', fig.querySelector('figcaption').textContent);
+      b.addEventListener('click', function () { go(n); });
+      dots.appendChild(b);
+      fig.addEventListener('click', function () { if (n !== i) go(n); });
+    });
+
+    // Each screen sits at its circular distance from the active one (-2..2 for five), so there are
+    // always neighbours on both sides; one that wraps around the back moves without animating.
+    var prevOff = [];
+    function layout() {
+      var w = slides[0].offsetWidth, gap = w * 0.12, half = Math.floor(slides.length / 2);
+      track.style.height = slides[0].offsetHeight + 'px';
+      slides.forEach(function (f, n) {
+        var off = ((n - i + slides.length + half) % slides.length) - half;
+        f.classList.toggle('jump', prevOff[n] != null && Math.abs(off - prevOff[n]) > 1);
+        prevOff[n] = off;
+        var scale = off === 0 ? 1 : 0.84;
+        f.style.transform = 'translateX(' + off * (w * 0.84 + gap) + 'px) scale(' + scale + ')';
+        f.style.opacity = off === 0 ? '1' : Math.abs(off) === 1 ? '0.5' : '0.2';
+        f.classList.toggle('on', off === 0);
+        f.setAttribute('aria-hidden', off === 0 ? 'false' : 'true');
+      });
+      Array.prototype.forEach.call(dots.children, function (d, n) { d.setAttribute('aria-current', n === i ? 'true' : 'false'); });
+    }
+    function go(n) { i = (n + slides.length) % slides.length; layout(); restart(); }
+    function restart() {
+      clearInterval(timer);
+      if (!reduced && !hover && visible) timer = setInterval(function () { i = (i + 1) % slides.length; layout(); }, 3500);
+    }
+
+    root.querySelector('.prev').addEventListener('click', function () { go(i - 1); });
+    root.querySelector('.next').addEventListener('click', function () { go(i + 1); });
+    root.addEventListener('mouseenter', function () { hover = true; restart(); });
+    root.addEventListener('mouseleave', function () { hover = false; restart(); });
+    root.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') go(i - 1);
+      if (e.key === 'ArrowRight') go(i + 1);
+    });
+
+    var startX = null;
+    viewport.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    viewport.addEventListener('touchend', function (e) {
+      if (startX == null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) go(dx < 0 ? i + 1 : i - 1);
+      startX = null;
+    });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { visible = es[0].isIntersecting; restart(); }).observe(root);
+    }
+    window.addEventListener('resize', layout);
+    window.addEventListener('load', layout);
+    layout();
+    restart();
+  })();
+</script>
 </body>
 </html>

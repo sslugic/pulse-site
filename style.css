@@ -115,9 +115,31 @@ section { padding: 56px 0; }
 @media (max-width: 860px) { .features { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
 
-.shots { display: flex; gap: 18px; overflow-x: auto; padding: 8px 4px 24px; scroll-snap-type: x mandatory; }
-.shots figure { margin: 0; flex: 0 0 220px; scroll-snap-align: start; }
+.shots { position: relative; }
+.shots .viewport { overflow: hidden; padding: 12px 0 8px; touch-action: pan-y; }
+.shots .track { position: relative; height: 600px; }
+.shots figure {
+  position: absolute; top: 0; left: 50%; width: 240px; margin: 0 0 0 -120px; cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease;
+}
+.shots figure.on { cursor: default; z-index: 1; }
+.shots figure.jump { transition: none; }
 .shots img { border: 3px solid var(--ink); border-radius: 22px; box-shadow: 6px 6px 0 var(--ink); }
+.shots figure.on img { box-shadow: 6px 6px 0 var(--ink), 0 0 40px rgba(156, 255, 46, 0.35); }
+.shots .arrow {
+  position: absolute; top: 42%; z-index: 2; width: 54px; height: 54px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer;
+  font-family: var(--comic); font-size: 2rem; line-height: 1; color: var(--ink); background: var(--lime);
+  border: 3px solid var(--ink); border-bottom-width: 6px; box-shadow: 0 0 22px rgba(156, 255, 46, 0.4);
+}
+.shots .arrow:active { border-bottom-width: 3px; transform: translateY(2px); }
+.shots .arrow.prev { left: 0; }
+.shots .arrow.next { right: 0; }
+.shots .dots { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
+.shots .dots button { width: 12px; height: 12px; padding: 0; border-radius: 50%; border: 2px solid var(--ink); background: #3a3f44; cursor: pointer; }
+.shots .dots button[aria-current='true'] { background: var(--yellow); width: 30px; border-radius: 6px; }
+@media (max-width: 560px) { .shots figure { width: 200px; margin-left: -100px; } .shots .arrow { width: 44px; height: 44px; font-size: 1.6rem; } }
+@media (prefers-reduced-motion: reduce) { .shots .track, .shots figure { transition: none; } }
 .shots figcaption { font-family: var(--comic); font-size: 1.3rem; letter-spacing: 0.05em; margin-top: 10px; text-align: center; }
 
 .crew { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
