@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>You're Invited to Pulse</title>
-<meta name="description" content="A friend invited you to Pulse, the AI fitness coach built like an arcade game. Join and you both get 25 free AI credits.">
+<title data-i18n="inv.title">You're Invited to Pulse</title>
+<meta name="description" data-i18n-content="inv.desc" content="A friend invited you to Pulse, the AI fitness coach built like an arcade game. Join and you both get 25 free AI credits.">
 <meta property="og:title" content="You're invited to Pulse">
 <meta property="og:description" content="Join with a friend's code and you both get 25 free AI credits.">
 <meta property="og:image" content="https://sslugic.github.io/pulse-site/img/icon.png">
@@ -21,30 +21,32 @@
   .steps { text-align: left; margin: 24px 0; }
   .steps li { margin: 8px 0; color: #dcdad3; }
   .stack { display: grid; gap: 12px; justify-items: center; }
+  .lang-bar { position: absolute; top: 18px; right: 16px; }
 </style>
 </head>
 <body>
 <div class="hazard"></div>
+<div class="lang-bar"><select class="lang" aria-label="Language"></select></div>
 <div class="invite">
   <img class="logo" src="img/icon.png" alt="Pulse">
-  <span class="tag" style="color:var(--lime);font-size:1.2rem">Your crew is calling</span>
-  <h1 class="outline">YOU'RE INVITED<br>TO PULSE</h1>
-  <p style="color:#dcdad3">Join with this code and you <strong>both get 25 free AI credits</strong> for the Coach, meal plans and workout plans.</p>
+  <span class="tag" style="color:var(--lime);font-size:1.2rem" data-i18n="inv.tag">Your crew is calling</span>
+  <h1 class="outline" data-i18n-html="inv.h1">YOU'RE INVITED<br>TO PULSE</h1>
+  <p style="color:#dcdad3" data-i18n-html="inv.p">Join with this code and you <strong>both get 25 free AI credits</strong> for the Coach, meal plans and workout plans.</p>
   <div id="code-wrap" hidden>
-    <button class="code" id="code" title="Tap to copy"></button>
-    <p class="dim" id="copied">Tap the code to copy it</p>
+    <button class="code" id="code" title="Tap to copy" data-i18n-title="inv.copyTitle"></button>
+    <p class="dim" id="copied" data-i18n="inv.tap">Tap the code to copy it</p>
   </div>
   <div class="panel steps">
     <ol>
-      <li>Get Pulse from the beta on TestFlight (free).</li>
-      <li>Open it and sign in with Apple in Crew → Account.</li>
-      <li>Tap <strong>Open in Pulse</strong> below, or enter the code in Crew → Credits → I have a code</li>
+      <li data-i18n="inv.s1">Get Pulse from the beta on TestFlight (free).</li>
+      <li data-i18n="inv.s2">Open it and sign in with Apple in Crew → Account.</li>
+      <li data-i18n-html="inv.s3">Tap <strong>Open in Pulse</strong> below, or enter the code in Crew → Credits → I have a code.</li>
     </ol>
   </div>
   <div class="stack">
-    <a class="btn" id="open" href="pulse://">Open in Pulse</a>
-    <a class="btn ghost" href="https://testflight.apple.com/join/YmezgdX3">⬇ Get Pulse</a>
-    <a href="./" class="dim">What's Pulse?</a>
+    <a class="btn" id="open" href="pulse://" data-i18n="inv.open">Open in Pulse</a>
+    <a class="btn ghost" href="https://testflight.apple.com/join/YmezgdX3" data-i18n="inv.get">⬇ Get Pulse</a>
+    <a href="./" class="dim" data-i18n="inv.what">What's Pulse?</a>
   </div>
 </div>
 <script>
@@ -58,11 +60,12 @@
     el.textContent = code;
     el.addEventListener('click', function () {
       if (navigator.clipboard) navigator.clipboard.writeText(code).then(function () {
-        document.getElementById('copied').textContent = 'Copied!';
+        document.getElementById('copied').textContent = window.pulseI18n ? pulseI18n.t('inv.copied', 'Copied!') : 'Copied!';
       }).catch(function () {});
     });
     document.getElementById('open').href = 'pulse://r/' + encodeURIComponent(code);
   })();
 </script>
+<script src="i18n.js"></script>
 </body>
 </html>

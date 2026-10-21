@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pulse: AI Fitness Coach, Arcade Style</title>
-<meta name="description" content="Pulse is an AI fitness coach built like an 80s arcade game. Log meals, workouts and mood by talking, typing or snapping a photo. Keep your streak, rank up, open chests and battle your crew.">
+<title data-i18n="meta.title">Pulse: AI Fitness Coach, Arcade Style</title>
+<meta name="description" data-i18n-content="meta.desc" content="Pulse is an AI fitness coach built like an 80s arcade game. Log meals, workouts and mood by talking, typing or snapping a photo. Keep your streak, rank up, open chests and battle your crew.">
 <meta property="og:title" content="Pulse: AI Fitness Coach, Arcade Style">
 <meta property="og:description" content="Log it, stack XP, rank up. An AI fitness coach that plays like an arcade game.">
 <meta property="og:image" content="https://sslugic.github.io/pulse-site/img/icon.png">
@@ -22,10 +22,11 @@
   <div class="wrap">
     <a class="brand" href="#"><img src="img/icon.png" alt=""><span>PULSE</span></a>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#screens">Screens</a>
-      <a href="#support">Support</a>
-      <a class="btn" href="#install">Get it</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#screens" data-i18n="nav.screens">Screens</a>
+      <a href="#support" data-i18n="nav.support">Support</a>
+      <select class="lang" aria-label="Language"></select>
+      <a class="btn" href="#install" data-i18n="nav.getIt">Get it</a>
     </nav>
   </div>
 </header>
@@ -35,19 +36,19 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="kicker">AI fitness coach · arcade style</span>
-      <h1 class="outline">LOG IT.<br>STACK XP.<br><span class="drip">RUN THE BLOCK.</span></h1>
-      <p class="lead">Pulse turns staying healthy into an 80s street arcade. Tell the Coach what you ate, snap a photo or scan a barcode, and it handles the calories and macros. Every log earns XP, streaks multiply it, and quests, chests and challenges keep you coming back.</p>
+      <span class="kicker" data-i18n="hero.kicker">AI fitness coach · arcade style</span>
+      <h1 class="outline" data-i18n-html="hero.title">LOG IT.<br>STACK XP.<br><span class="drip">RUN THE BLOCK.</span></h1>
+      <p class="lead" data-i18n="hero.lead">Pulse turns staying healthy into an 80s street arcade. Tell the Coach what you ate, snap a photo or scan a barcode, and it handles the calories and macros. Every log earns XP, streaks multiply it, and quests, chests and challenges keep you coming back.</p>
       <div class="ctas">
-        <a class="btn" href="#install">⬇ Download for iPhone</a>
-        <a class="btn ghost" href="#features">See what's inside</a>
+        <a class="btn" href="#install" data-i18n="hero.download">⬇ Download for iPhone</a>
+        <a class="btn ghost" href="#features" data-i18n="hero.see">See what's inside</a>
       </div>
-      <p class="note">Free to play · 50 AI credits when you sign up · iPhone</p>
+      <p class="note" data-i18n="hero.note">Free to play · 50 AI credits when you sign up · iPhone</p>
     </div>
     <div class="phone">
       <img src="img/1-hq.jpg" alt="Pulse HQ screen: calories left, macros, streak and Street Crew rank" width="900" height="1951">
       <span class="sticker">+15 XP</span>
-      <span class="sticker b">2-DAY STREAK 🔥</span>
+      <span class="sticker b" data-i18n="hero.streak">2-DAY STREAK 🔥</span>
     </div>
   </div>
   <div class="wrap">
@@ -60,38 +61,38 @@
 
 <section id="features">
   <div class="wrap">
-    <h2 class="section-title outline">WHAT'S IN THE BOX</h2>
-    <p class="section-sub">Everything you need to eat right, train and stay sane, wrapped in neon and spray paint.</p>
+    <h2 class="section-title outline" data-i18n="features.title">WHAT'S IN THE BOX</h2>
+    <p class="section-sub" data-i18n="features.sub">Everything you need to eat right, train and stay sane, wrapped in neon and spray paint.</p>
     <div class="features">
       <div class="panel feature">
         <div class="icon" style="background:var(--violet)">🎙️</div>
-        <h3>THE COACH</h3>
-        <p>Talk, type or send a photo. Your AI coach logs meals and workouts, answers questions, and builds meal and workout plans. Pick a personality: Sarge, MC Hype, Breeze, Sensei and more.</p>
+        <h3 data-i18n="f1.t">THE COACH</h3>
+        <p data-i18n="f1.p">Talk, type or send a photo. Your AI coach logs meals and workouts, answers questions, and builds meal and workout plans. Pick a personality: Sarge, MC Hype, Breeze, Sensei and more.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--cyan)">📸</div>
-        <h3>SNAP &amp; SCAN</h3>
-        <p>Photograph a plate for instant calories and macros, or scan a barcode. Water, weight, sleep and mood are one tap away. Apple Health keeps your burned calories in sync.</p>
+        <h3 data-i18n="f2.t">SNAP &amp; SCAN</h3>
+        <p data-i18n="f2.p">Photograph a plate for instant calories and macros, or scan a barcode. Water, weight, sleep and mood are one tap away. Apple Health keeps your burned calories in sync.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--orange)">🔥</div>
-        <h3>STREAKS &amp; RANKS</h3>
-        <p>Every log earns XP. Climb 15 Street Crew ranks from Rookie to Pulse Immortal, unlock new walls, and use streak freezes to save a missed day.</p>
+        <h3 data-i18n="f3.t">STREAKS &amp; RANKS</h3>
+        <p data-i18n="f3.p">Every log earns XP. Climb 15 Street Crew ranks from Rookie to Pulse Immortal, unlock new walls, and use streak freezes to save a missed day.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--yellow)">🎯</div>
-        <h3>DAILY QUESTS</h3>
-        <p>Three fresh quests every day, easy to hard. Clear them all for a Perfect Day bonus and earn tokens to spend in the arcade.</p>
+        <h3 data-i18n="f4.t">DAILY QUESTS</h3>
+        <p data-i18n="f4.p">Three fresh quests every day, easy to hard. Clear them all for a Perfect Day bonus and earn tokens to spend in the arcade.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--lime)">🕹️</div>
-        <h3>STRESS ARCADE</h3>
-        <p>One-minute brain games for a quick reset. Win Brain Gym rounds for silver and gold chests packed with tokens, XP, freezes and rare avatars.</p>
+        <h3 data-i18n="f5.t">STRESS ARCADE</h3>
+        <p data-i18n="f5.p">One-minute brain games for a quick reset. Win Brain Gym rounds for silver and gold chests packed with tokens, XP, freezes and rare avatars.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--pink)">🤜</div>
-        <h3>SQUAD BATTLES</h3>
-        <p>Add friends, check the leaderboard and start challenges solo or head to head. Flip on Hard Mode for a tougher goal and a gold chest.</p>
+        <h3 data-i18n="f6.t">SQUAD BATTLES</h3>
+        <p data-i18n="f6.p">Add friends, check the leaderboard and start challenges solo or head to head. Flip on Hard Mode for a tougher goal and a gold chest.</p>
       </div>
     </div>
   </div>
@@ -99,20 +100,20 @@
 
 <section id="screens">
   <div class="wrap">
-    <h2 class="section-title outline">STRAIGHT FROM THE TUNNEL</h2>
-    <p class="section-sub">A quick tour of the app. Tap the arrows or swipe to jump ahead.</p>
+    <h2 class="section-title outline" data-i18n="screens.title">STRAIGHT FROM THE TUNNEL</h2>
+    <p class="section-sub" data-i18n="screens.sub">A quick tour of the app. Tap the arrows or swipe to jump ahead.</p>
     <div class="shots" aria-roledescription="carousel" aria-label="App screenshots">
-      <button class="arrow prev" type="button" aria-label="Previous screen">‹</button>
+      <button class="arrow prev" type="button" aria-label="Previous screen" data-i18n-aria="screens.prev">‹</button>
       <div class="viewport">
         <div class="track">
       <figure><img src="img/1-hq.jpg" alt="HQ: daily calories, macros and streak" loading="lazy" width="900" height="1951"><figcaption>HQ</figcaption></figure>
       <figure><img src="img/2-coach.jpg" alt="Coach: chat with your AI coach" loading="lazy" width="900" height="1951"><figcaption>COACH</figcaption></figure>
       <figure><img src="img/3-arcade.jpg" alt="Stress Arcade: chests and brain games" loading="lazy" width="900" height="1951"><figcaption>ARCADE</figcaption></figure>
-      <figure><img src="img/4-stats.jpg" alt="Stats: trends and history" loading="lazy" width="900" height="1951"><figcaption>STATS</figcaption></figure>
-      <figure><img src="img/5-ranks.jpg" alt="Ranks: the Street Crew ladder" loading="lazy" width="900" height="1951"><figcaption>RANKS</figcaption></figure>
+      <figure><img src="img/4-stats.jpg" alt="Stats: trends and history" loading="lazy" width="900" height="1951"><figcaption data-i18n="cap.stats">STATS</figcaption></figure>
+      <figure><img src="img/5-ranks.jpg" alt="Ranks: the Street Crew ladder" loading="lazy" width="900" height="1951"><figcaption data-i18n="cap.ranks">RANKS</figcaption></figure>
         </div>
       </div>
-      <button class="arrow next" type="button" aria-label="Next screen">›</button>
+      <button class="arrow next" type="button" aria-label="Next screen" data-i18n-aria="screens.next">›</button>
       <div class="dots" role="tablist" aria-label="Choose a screen"></div>
     </div>
   </div>
@@ -120,8 +121,8 @@
 
 <section id="crew">
   <div class="wrap">
-    <h2 class="section-title outline">REP YOUR CREW</h2>
-    <p class="section-sub">Pick your avatar. Unlock more as you rank up or spend XP, and hunt chests for the rare ones.</p>
+    <h2 class="section-title outline" data-i18n="crew.title">REP YOUR CREW</h2>
+    <p class="section-sub" data-i18n="crew.sub">Pick your avatar. Unlock more as you rank up or spend XP, and hunt chests for the rare ones.</p>
     <div class="crew">
       <figure><div class="ring"><img src="img/avatars/spray.svg" alt="" loading="lazy"></div><figcaption>Spray Can</figcaption></figure>
       <figure><div class="ring"><img src="img/avatars/boombox.svg" alt="" loading="lazy"></div><figcaption>Boombox</figcaption></figure>
@@ -141,32 +142,32 @@
 
 <section id="install">
   <div class="wrap">
-    <h2 class="section-title outline">GET PULSE ON YOUR IPHONE</h2>
-    <p class="section-sub">Pulse is in public beta on TestFlight, Apple's official beta app. Anyone can join, and it's free.</p>
+    <h2 class="section-title outline" data-i18n="install.title">GET PULSE ON YOUR IPHONE</h2>
+    <p class="section-sub" data-i18n="install.sub">Pulse is in public beta on TestFlight, Apple's official beta app. Anyone can join, and it's free.</p>
     <div class="install">
       <div class="panel">
-        <span class="badge">Recommended</span>
-        <h3>JOIN THE BETA</h3>
+        <span class="badge" data-i18n="badge.rec">Recommended</span>
+        <h3 data-i18n="beta.t">JOIN THE BETA</h3>
         <ol>
-          <li>Install <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> from the App Store.</li>
-          <li>On your iPhone, tap <strong>Join the beta</strong> below, then <strong>Accept</strong>.</li>
-          <li>Tap <strong>Install</strong>. Pulse lands on your home screen and updates automatically.</li>
+          <li data-i18n-html="beta.1">Install <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> from the App Store.</li>
+          <li data-i18n-html="beta.2">On your iPhone, tap <strong>Join the beta</strong> below, then <strong>Accept</strong>.</li>
+          <li data-i18n-html="beta.3">Tap <strong>Install</strong>. Pulse lands on your home screen and updates automatically.</li>
         </ol>
-        <a class="btn" href="https://testflight.apple.com/join/YmezgdX3">⬇ Join the beta</a>
-        <p class="dim" style="margin-top:14px">Opening this page on a computer? Send the link to your phone,.</p>
+        <a class="btn" href="https://testflight.apple.com/join/YmezgdX3" data-i18n="beta.btn">⬇ Join the beta</a>
+        <p class="dim" style="margin-top:14px" data-i18n="beta.note">Opening this page on a computer? Send the link to your phone.</p>
       </div>
       <div class="side">
         <div class="panel">
-          <span class="badge soon">Coming soon</span>
-          <h3>APP STORE</h3>
-          <p style="margin:0;color:#cfcdc6">Pulse 1.0 is in App Review. This page will link straight to the App Store when it's live.</p>
+          <span class="badge soon" data-i18n="badge.soon">Coming soon</span>
+          <h3 data-i18n="store.t">APP STORE</h3>
+          <p style="margin:0;color:#cfcdc6" data-i18n="store.p">Pulse 1.0 is in App Review. This page will link straight to the App Store when it's live.</p>
         </div>
         <div class="panel">
-          <span class="badge adv">Advanced</span>
-          <h3>DOWNLOAD THE .IPA</h3>
-          <p style="margin:0 0 14px;color:#cfcdc6">The latest build is on GitHub. iPhones only install apps from the App Store or TestFlight, so you need a sideloading tool like AltStore or Sideloadly to re-sign it with your own Apple ID.</p>
+          <span class="badge adv" data-i18n="badge.adv">Advanced</span>
+          <h3 data-i18n="ipa.t">DOWNLOAD THE .IPA</h3>
+          <p style="margin:0 0 14px;color:#cfcdc6" data-i18n="ipa.p">The latest build is on GitHub. iPhones only install apps from the App Store or TestFlight, so you need a sideloading tool like AltStore or Sideloadly to re-sign it with your own Apple ID.</p>
           <a class="btn alt" href="https://github.com/sslugic/pulse/releases/latest/download/Pulse.ipa">⬇ Pulse.ipa</a>
-          <p class="dim" style="margin-top:10px"><a href="https://github.com/sslugic/pulse/releases">All releases</a></p>
+          <p class="dim" style="margin-top:10px"><a href="https://github.com/sslugic/pulse/releases" data-i18n="ipa.all">All releases</a></p>
         </div>
       </div>
     </div>
@@ -175,24 +176,24 @@
 
 <section id="support">
   <div class="wrap">
-    <h2 class="section-title outline">SUPPORT</h2>
-    <p class="section-sub">Questions, bugs or feedback: <a href="mailto:slugics@gmail.com">slugics@gmail.com</a>. We usually reply within 2 business days.</p>
+    <h2 class="section-title outline" data-i18n="support.title">SUPPORT</h2>
+    <p class="section-sub" data-i18n-html="support.sub">Questions, bugs or feedback: <a href="mailto:slugics@gmail.com">slugics@gmail.com</a>. We usually reply within 2 business days.</p>
     <div class="panel faq">
-      <details><summary>How do AI credits work?</summary><p>The Coach, plans and recaps use AI credits. New accounts get 50 free credits. You can buy credit packs or subscribe to Pulse Pro in Crew → Credits, where the cost of each feature is listed. You can also earn free credits by inviting friends or trading XP.</p></details>
-      <details><summary>How do I restore purchases?</summary><p>Crew → Credits → Restore purchases. Sign in with the same Apple ID you bought with.</p></details>
-      <details><summary>How do I cancel Pulse Pro?</summary><p>iPhone Settings → your name → Subscriptions → Pulse Pro → Cancel. You keep your credits until the end of the period.</p></details>
-      <details><summary>How do I delete my account?</summary><p>Crew → Account → Delete account. This deletes your account, credits and cloud backup.</p></details>
-      <details><summary>How do I change the language?</summary><p>Pulse follows your iPhone's language. To change it just for Pulse: Settings → Apps → Pulse → Language.</p></details>
-      <details><summary>Is my data private?</summary><p>Your logs stay on your phone unless you turn on cloud backup. Read the <a href="privacy.html">Privacy Policy</a> for the details.</p></details>
+      <details><summary data-i18n="faq1.q">How do AI credits work?</summary><p data-i18n-html="faq1.a">The Coach, plans and recaps use AI credits. New accounts get 50 free credits. You can buy credit packs or subscribe to Pulse Pro in Crew → Credits, where the cost of each feature is listed. You can also earn free credits by inviting friends or trading XP.</p></details>
+      <details><summary data-i18n="faq2.q">How do I restore purchases?</summary><p data-i18n-html="faq2.a">Crew → Credits → Restore purchases. Sign in with the same Apple ID you bought with.</p></details>
+      <details><summary data-i18n="faq3.q">How do I cancel Pulse Pro?</summary><p data-i18n-html="faq3.a">iPhone Settings → your name → Subscriptions → Pulse Pro → Cancel. You keep your credits until the end of the period.</p></details>
+      <details><summary data-i18n="faq4.q">How do I delete my account?</summary><p data-i18n-html="faq4.a">Crew → Account → Delete account. This deletes your account, credits and cloud backup.</p></details>
+      <details><summary data-i18n="faq5.q">How do I change the language?</summary><p data-i18n-html="faq5.a">Pulse follows your iPhone's language. To change it just for Pulse: Settings → Apps → Pulse → Language.</p></details>
+      <details><summary data-i18n="faq6.q">Is my data private?</summary><p data-i18n-html="faq6.a">Your logs stay on your phone unless you turn on cloud backup. Read the <a href="privacy.html">Privacy Policy</a> for the details.</p></details>
     </div>
-    <p class="dim" style="margin-top:18px">Pulse gives general fitness and nutrition guidance generated by AI. It isn't medical advice.</p>
+    <p class="dim" style="margin-top:18px" data-i18n="support.disclaimer">Pulse gives general fitness and nutrition guidance generated by AI. It isn't medical advice.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Pulse · Made in the tunnels</span>
-    <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="mailto:slugics@gmail.com">Contact</a></span>
+    <span data-i18n="footer.made">© 2026 Pulse · Made in the tunnels</span>
+    <span><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a> · <a href="terms.html" data-i18n="footer.terms">Terms of Use</a> · <a href="mailto:slugics@gmail.com" data-i18n="footer.contact">Contact</a></span>
   </div>
 </footer>
 
@@ -269,5 +270,6 @@
     restart();
   })();
 </script>
+<script src="i18n.js"></script>
 </body>
 </html>
