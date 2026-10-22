@@ -13,10 +13,10 @@
   }
 
   add('es', {
-    'meta.title': `Pulse: coach de fitness con IA, estilo arcade`,
-    'meta.desc': `Pulse es un coach de fitness con IA hecho como un arcade de los 80. Registra comidas, entrenos y ánimo hablando, escribiendo o con una foto. Mantén tu racha, sube de rango, abre cofres y compite con tu crew.`,
+    'meta.title': `Pulse: rastreador de fitness retro`,
+    'meta.desc': `Pulse es un rastreador de fitness con estilo retro. Registra comidas, entrenos, agua y ánimo hablando, escribiendo o con una foto. Cuenta calorías y macros, mantén tu racha, sube de rango y reta a tu crew.`,
     'nav.features': `Funciones`, 'nav.screens': `Pantallas`, 'nav.support': `Soporte`, 'nav.getIt': `Descargar`, 'nav.home': `Inicio`,
-    'hero.kicker': `Coach de fitness con IA · estilo arcade`,
+    'hero.kicker': `Contador de calorías y registro de entrenos · estilo retro`,
     'hero.title': `REGÍSTRALO.<br>SUMA XP.<br><span class="drip">DOMINA EL BARRIO.</span>`,
     'hero.lead': `Pulse convierte cuidarte en un arcade callejero de los 80. Dile al Coach qué comiste, haz una foto o escanea un código de barras, y él se encarga de las calorías y los macros. Cada registro da XP, las rachas lo multiplican, y las misiones, cofres y retos te hacen volver.`,
     'hero.download': `⬇ Descargar para iPhone`, 'hero.see': `Mira lo que trae`,
@@ -68,10 +68,10 @@
   });
 
   add('de', {
-    'meta.title': `Pulse: KI-Fitnesscoach im Arcade-Stil`,
-    'meta.desc': `Pulse ist ein KI-Fitnesscoach im Stil eines 80er-Arcade-Spiels. Trag Mahlzeiten, Workouts und Stimmung per Sprache, Text oder Foto ein. Halte deine Serie, steig im Rang auf, öffne Truhen und tritt gegen deine Crew an.`,
+    'meta.title': `Pulse: Retro-Fitness-Tracker`,
+    'meta.desc': `Pulse ist ein Fitness-Tracker im Retro-Stil. Trag Mahlzeiten, Workouts, Wasser und Stimmung per Sprache, Text oder Foto ein. Zähl Kalorien und Makros, halte deinen Streak, steig im Rang auf und fordere deine Crew heraus.`,
     'nav.features': `Funktionen`, 'nav.screens': `Screens`, 'nav.support': `Support`, 'nav.getIt': `Holen`, 'nav.home': `Start`,
-    'hero.kicker': `KI-Fitnesscoach · Arcade-Stil`,
+    'hero.kicker': `Kalorienzähler & Trainingslog · Retro-Stil`,
     'hero.title': `EINTRAGEN.<br>XP STAPELN.<br><span class="drip">DEN BLOCK RULEN.</span>`,
     'hero.lead': `Pulse macht gesund bleiben zu einer 80er-Straßen-Arcade. Sag dem Coach, was du gegessen hast, mach ein Foto oder scanne einen Barcode – er kümmert sich um Kalorien und Makros. Jeder Eintrag bringt XP, Serien vervielfachen sie, und Quests, Truhen und Challenges halten dich bei der Stange.`,
     'hero.download': `⬇ Für iPhone laden`, 'hero.see': `Was drin ist`,
@@ -123,10 +123,10 @@
   });
 
   add('fr', {
-    'meta.title': `Pulse : coach fitness IA, style arcade`,
-    'meta.desc': `Pulse est un coach fitness IA conçu comme un jeu d’arcade des années 80. Note tes repas, séances et ton humeur en parlant, en écrivant ou en photo. Garde ta série, monte en rang, ouvre des coffres et affronte ton crew.`,
+    'meta.title': `Pulse : suivi fitness rétro`,
+    'meta.desc': `Pulse est un suivi fitness au style rétro. Note tes repas, séances, eau et humeur en parlant, en écrivant ou en photo. Compte calories et macros, garde ta série, monte en rang et défie ton crew.`,
     'nav.features': `Fonctions`, 'nav.screens': `Écrans`, 'nav.support': `Aide`, 'nav.getIt': `L’obtenir`, 'nav.home': `Accueil`,
-    'hero.kicker': `Coach fitness IA · style arcade`,
+    'hero.kicker': `Compteur de calories et journal d’entraînement · style rétro`,
     'hero.title': `NOTE-LE.<br>CUMULE L’XP.<br><span class="drip">RÈGNE SUR LE QUARTIER.</span>`,
     'hero.lead': `Pulse transforme ta santé en arcade de rue des années 80. Dis au Coach ce que tu as mangé, prends une photo ou scanne un code-barres, et il gère les calories et les macros. Chaque note rapporte des XP, les séries les multiplient, et les quêtes, coffres et défis te font revenir.`,
     'hero.download': `⬇ Télécharger pour iPhone`, 'hero.see': `Voir ce qu’il y a dedans`,
@@ -178,10 +178,10 @@
   });
 
   add('it', {
-    'meta.title': `Pulse: coach fitness con IA, stile arcade`,
-    'meta.desc': `Pulse è un coach fitness con IA fatto come un videogioco arcade anni ’80. Registra pasti, allenamenti e umore parlando, scrivendo o con una foto. Mantieni la serie, sali di grado, apri forzieri e sfida la tua crew.`,
+    'meta.title': `Pulse: fitness tracker rétro`,
+    'meta.desc': `Pulse è un fitness tracker in stile rétro. Registra pasti, allenamenti, acqua e umore parlando, scrivendo o con una foto. Conta calorie e macro, mantieni la serie, sali di grado e sfida la tua crew.`,
     'nav.features': `Funzioni`, 'nav.screens': `Schermate`, 'nav.support': `Assistenza`, 'nav.getIt': `Scaricala`, 'nav.home': `Home`,
-    'hero.kicker': `Coach fitness con IA · stile arcade`,
+    'hero.kicker': `Contacalorie e diario di allenamento · stile rétro`,
     'hero.title': `REGISTRA.<br>ACCUMULA XP.<br><span class="drip">COMANDA IL QUARTIERE.</span>`,
     'hero.lead': `Pulse trasforma lo stare in salute in un arcade di strada anni ’80. Di’ al Coach cosa hai mangiato, scatta una foto o scansiona un codice a barre, e lui pensa a calorie e macro. Ogni registrazione dà XP, le serie li moltiplicano, e missioni, forzieri e sfide ti fanno tornare.`,
     'hero.download': `⬇ Scarica per iPhone`, 'hero.see': `Scopri cosa c’è dentro`,
@@ -233,10 +233,10 @@
   });
 
   add('pt', {
-    'meta.title': `Pulse: coach de fitness com IA, estilo arcade`,
-    'meta.desc': `Pulse é um coach de fitness com IA feito como um fliperama dos anos 80. Registre refeições, treinos e humor falando, digitando ou tirando uma foto. Mantenha sua sequência, suba de nível, abra baús e desafie sua crew.`,
+    'meta.title': `Pulse: rastreador fitness retrô`,
+    'meta.desc': `O Pulse é um rastreador fitness com estilo retrô. Registre refeições, treinos, água e humor falando, digitando ou tirando uma foto. Conte calorias e macros, mantenha sua sequência, suba de nível e desafie sua crew.`,
     'nav.features': `Recursos`, 'nav.screens': `Telas`, 'nav.support': `Suporte`, 'nav.getIt': `Baixar`, 'nav.home': `Início`,
-    'hero.kicker': `Coach de fitness com IA · estilo arcade`,
+    'hero.kicker': `Contador de calorias e registro de treinos · estilo retrô`,
     'hero.title': `REGISTRE.<br>JUNTE XP.<br><span class="drip">DOMINE O PEDAÇO.</span>`,
     'hero.lead': `O Pulse transforma cuidar da saúde num fliperama de rua dos anos 80. Conte ao Coach o que você comeu, tire uma foto ou escaneie um código de barras, e ele cuida das calorias e dos macros. Cada registro dá XP, as sequências multiplicam, e missões, baús e desafios fazem você voltar.`,
     'hero.download': `⬇ Baixar para iPhone`, 'hero.see': `Veja o que tem dentro`,
