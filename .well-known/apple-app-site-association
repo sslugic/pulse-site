@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["8SX4DK48U6.com.slavenslugic.pulse"],
+        "components": [{ "/": "/invite*", "comment": "Squad and referral invites open in the app" }]
+      }
+    ]
+  }
+}

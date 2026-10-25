@@ -50,11 +50,27 @@
   </div>
 </div>
 <script>
-  // invite.html?r=CODE: show the code and hand it to the app through pulse://r/CODE.
+  // invite.html?f=CODE (friend), ?c=CODE (crew) or ?r=CODE (referral). With Pulse installed, iOS opens
+  // the app straight from the link (universal link); otherwise this page shows the code and an Open
+  // button that hands it to the app through pulse://add/CODE, pulse://join/CODE or pulse://r/CODE.
   (function () {
-    var raw = new URLSearchParams(location.search).get('r') || '';
+    var q = new URLSearchParams(location.search);
+    var route = q.get('f') ? 'add' : q.get('c') ? 'join' : 'r';
+    var raw = q.get('f') || q.get('c') || q.get('r') || '';
     var code = raw.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 16);
     if (!code) return;
+    if (route !== 'r') {
+      // A Squad invite: no credits involved, so swap in the Squad wording before translations apply.
+      var lead = document.querySelector('[data-i18n-html="inv.p"]');
+      lead.setAttribute('data-i18n-html', 'inv.pSquad');
+      lead.innerHTML = route === 'add'
+        ? 'A friend wants you on their <strong>Squad leaderboard</strong>. Open this link on your iPhone with Pulse installed and you’re in.'
+        : 'Your crew wants you in. Open this link on your iPhone with Pulse installed and you <strong>join the crew automatically</strong>.';
+      if (route === 'join') lead.setAttribute('data-i18n-html', 'inv.pCrew');
+      var step = document.querySelector('[data-i18n-html="inv.s3"]');
+      step.setAttribute('data-i18n-html', 'inv.s3Squad');
+      step.innerHTML = 'Tap <strong>Open in Pulse</strong> below. Pulse finishes the rest once you’re signed in.';
+    }
     document.getElementById('code-wrap').hidden = false;
     var el = document.getElementById('code');
     el.textContent = code;
@@ -63,7 +79,7 @@
         document.getElementById('copied').textContent = window.pulseI18n ? pulseI18n.t('inv.copied', 'Copied!') : 'Copied!';
       }).catch(function () {});
     });
-    document.getElementById('open').href = 'pulse://r/' + encodeURIComponent(code);
+    document.getElementById('open').href = 'pulse://' + route + '/' + encodeURIComponent(code);
   })();
 </script>
 <script src="i18n.js"></script>
