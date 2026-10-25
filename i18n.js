@@ -64,6 +64,9 @@
     'inv.s1': `Consigue Pulse desde la beta en TestFlight (gratis).`,
     'inv.s2': `Ábrelo e inicia sesión con Apple en Crew → Cuenta.`,
     'inv.s3': `Toca <strong>Abrir en Pulse</strong> abajo, o escribe el código en Crew → Créditos → Tengo un código.`,
+    'inv.pSquad': `Un amigo te quiere en su <strong>tabla del Squad</strong>. Abre este enlace en tu iPhone con Pulse instalado y listo.`,
+    'inv.pCrew': `Tu equipo te quiere dentro. Abre este enlace en tu iPhone con Pulse instalado y <strong>te unes al equipo automáticamente</strong>.`,
+    'inv.s3Squad': `Toca <strong>Abrir en Pulse</strong> abajo. Pulse hace el resto en cuanto inicies sesión.`,
     'inv.open': `Abrir en Pulse`, 'inv.get': `⬇ Consigue Pulse`, 'inv.what': `¿Qué es Pulse?`,
   });
 
@@ -119,6 +122,9 @@
     'inv.s1': `Hol dir Pulse über die Beta auf TestFlight (kostenlos).`,
     'inv.s2': `Öffne es und melde dich mit Apple an unter Crew → Konto.`,
     'inv.s3': `Tipp unten auf <strong>In Pulse öffnen</strong> oder gib den Code ein unter Crew → Credits → Ich habe einen Code.`,
+    'inv.pSquad': `Ein Freund will dich auf seiner <strong>Squad-Rangliste</strong>. Öffne diesen Link auf deinem iPhone mit Pulse und du bist dabei.`,
+    'inv.pCrew': `Deine Crew will dich dabeihaben. Öffne diesen Link auf deinem iPhone mit Pulse und du <strong>trittst der Crew automatisch bei</strong>.`,
+    'inv.s3Squad': `Tipp unten auf <strong>In Pulse öffnen</strong>. Den Rest erledigt Pulse, sobald du angemeldet bist.`,
     'inv.open': `In Pulse öffnen`, 'inv.get': `⬇ Pulse holen`, 'inv.what': `Was ist Pulse?`,
   });
 
@@ -174,6 +180,9 @@
     'inv.s1': `Installe Pulse via la bêta sur TestFlight (gratuit).`,
     'inv.s2': `Ouvre-le et connecte-toi avec Apple dans Crew → Compte.`,
     'inv.s3': `Touche <strong>Ouvrir dans Pulse</strong> ci-dessous, ou saisis le code dans Crew → Crédits → J’ai un code.`,
+    'inv.pSquad': `Un ami te veut dans son <strong>classement Squad</strong>. Ouvre ce lien sur ton iPhone avec Pulse installé et c’est fait.`,
+    'inv.pCrew': `Ton équipe te veut avec elle. Ouvre ce lien sur ton iPhone avec Pulse installé et tu <strong>rejoins l’équipe automatiquement</strong>.`,
+    'inv.s3Squad': `Touche <strong>Ouvrir dans Pulse</strong> ci-dessous. Pulse fait le reste dès que tu es connecté.`,
     'inv.open': `Ouvrir dans Pulse`, 'inv.get': `⬇ Obtenir Pulse`, 'inv.what': `C’est quoi Pulse ?`,
   });
 
@@ -229,6 +238,9 @@
     'inv.s1': `Scarica Pulse dalla beta su TestFlight (gratis).`,
     'inv.s2': `Aprilo e accedi con Apple in Crew → Account.`,
     'inv.s3': `Tocca <strong>Apri in Pulse</strong> qui sotto, oppure inserisci il codice in Crew → Crediti → Ho un codice.`,
+    'inv.pSquad': `Un amico ti vuole nella sua <strong>classifica Squad</strong>. Apri questo link sul tuo iPhone con Pulse installato e ci sei.`,
+    'inv.pCrew': `La tua squadra ti vuole dentro. Apri questo link sul tuo iPhone con Pulse installato e <strong>entri nella squadra automaticamente</strong>.`,
+    'inv.s3Squad': `Tocca <strong>Apri in Pulse</strong> qui sotto. Pulse fa il resto appena hai effettuato l’accesso.`,
     'inv.open': `Apri in Pulse`, 'inv.get': `⬇ Scarica Pulse`, 'inv.what': `Cos’è Pulse?`,
   });
 
@@ -284,6 +296,9 @@
     'inv.s1': `Baixe o Pulse pelo beta no TestFlight (grátis).`,
     'inv.s2': `Abra e entre com a Apple em Crew → Conta.`,
     'inv.s3': `Toque em <strong>Abrir no Pulse</strong> abaixo, ou digite o código em Crew → Créditos → Tenho um código.`,
+    'inv.pSquad': `Um amigo quer você no <strong>ranking do Squad</strong>. Abra este link no seu iPhone com o Pulse instalado e pronto.`,
+    'inv.pCrew': `Sua equipe quer você junto. Abra este link no seu iPhone com o Pulse instalado e você <strong>entra na equipe automaticamente</strong>.`,
+    'inv.s3Squad': `Toque em <strong>Abrir no Pulse</strong> abaixo. O Pulse faz o resto assim que você entrar.`,
     'inv.open': `Abrir no Pulse`, 'inv.get': `⬇ Baixar o Pulse`, 'inv.what': `O que é o Pulse?`,
   });
 
