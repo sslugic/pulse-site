@@ -84,7 +84,15 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 720px) { .top nav a:not(.btn) { display: none; } }
 
 /* ---------- hero ---------- */
-.hero { padding: 56px 0 40px; overflow: hidden; }
+.hero { position: relative; padding: 56px 0 40px; overflow: hidden; isolation: isolate; }
+.hero-bg {
+  /* One of the app's walls, dimmed so the headline stays readable. */
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(11, 12, 13, 0.94) 0%, rgba(11, 12, 13, 0.7) 45%, rgba(11, 12, 13, 0.3) 100%),
+    linear-gradient(180deg, rgba(11, 12, 13, 0) 60%, var(--bg) 100%),
+    url('img/hero-bg.jpg') center 35% / cover no-repeat;
+}
+@media (max-width: 860px) { .hero-bg { background: linear-gradient(180deg, rgba(11, 12, 13, 0.9), rgba(11, 12, 13, 0.7) 50%, var(--bg)), url('img/hero-bg.jpg') center top / cover no-repeat; } }
 .hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 32px; align-items: center; }
 .hero .kicker { font-family: var(--tag); color: var(--lime); font-size: 1.3rem; transform: rotate(-2deg); display: inline-block; }
 .hero h1 { font-family: var(--comic); font-size: clamp(3.4rem, 9vw, 6.6rem); margin: 8px 0 12px; letter-spacing: 0.03em; line-height: 0.9; }
@@ -142,12 +150,35 @@ section { padding: 56px 0; }
 @media (prefers-reduced-motion: reduce) { .shots .track, .shots figure { transition: none; } }
 .shots figcaption { font-family: var(--comic); font-size: 1.3rem; letter-spacing: 0.05em; margin-top: 10px; text-align: center; }
 
-.crew { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.coaches { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.coach-card { flex: 0 0 calc((100% - 64px) / 5); margin: 0; background: var(--card); border: 3px solid var(--ink); border-radius: 16px; overflow: hidden; box-shadow: 5px 5px 0 var(--ink); }
+.coach-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-bottom: 3px solid var(--ink); }
+.coach-card figcaption { padding: 10px 12px 12px; }
+.coach-card strong { display: block; font-family: var(--comic); font-size: 1.5rem; letter-spacing: 0.05em; font-weight: 400; line-height: 1.1; }
+.coach-card span { display: block; color: var(--dim); font-size: 0.85rem; line-height: 1.4; }
+@media (max-width: 860px) { .coach-card { flex-basis: calc((100% - 32px) / 3); } }
+@media (max-width: 560px) { .coaches { gap: 12px; } .coach-card { flex-basis: calc((100% - 12px) / 2); } }
+
+/* The walls drift past in a loop (the list is doubled so it wraps without a seam). */
+.walls { overflow: hidden; padding: 6px 0 14px; }
+.walls-track { display: flex; gap: 14px; width: max-content; animation: walls-drift 120s linear infinite; }
+.walls:hover .walls-track { animation-play-state: paused; }
+.walls img { width: 150px; aspect-ratio: 9 / 16; object-fit: cover; border: 3px solid var(--ink); border-radius: 14px; box-shadow: 4px 4px 0 var(--ink); }
+@keyframes walls-drift { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .walls { overflow-x: auto; } .walls-track { animation: none; } }
+
+.crew { display: grid; grid-template-columns: repeat(8, 1fr); gap: 12px; }
 .crew figure { margin: 0; text-align: center; }
 .crew .ring { aspect-ratio: 1; border-radius: 50%; padding: 6px; background: linear-gradient(135deg, #c9cdd0, #6a7074 50%, #33383b); box-shadow: 4px 5px 0 var(--ink); }
 .crew .ring img { width: 100%; height: 100%; border-radius: 50%; border: 2px solid var(--ink); }
 .crew figcaption { font-family: var(--block); font-size: 0.75rem; color: var(--dim); margin-top: 8px; text-transform: uppercase; }
-@media (max-width: 560px) { .crew { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 860px) { .crew { grid-template-columns: repeat(6, 1fr); } }
+@media (max-width: 560px) { .crew { grid-template-columns: repeat(4, 1fr); gap: 10px; } }
+.icons { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-top: 32px; max-width: 720px; }
+.icons figure { margin: 0; text-align: center; }
+.icons img { width: 100%; aspect-ratio: 1; border-radius: 22%; border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.icons figcaption { font-family: var(--block); font-size: 0.72rem; color: var(--dim); margin-top: 8px; text-transform: uppercase; }
+@media (max-width: 560px) { .icons { grid-template-columns: repeat(3, 1fr); } }
 
 /* ---------- install ---------- */
 .install { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; align-items: start; }
