@@ -23,6 +23,7 @@
     <a class="brand" href="#"><img src="img/icon.png" alt=""><span>PULSE</span></a>
     <nav>
       <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#coaches" data-i18n="nav.coaches">Coaches</a>
       <a href="#screens" data-i18n="nav.screens">Screens</a>
       <a href="#support" data-i18n="nav.support">Support</a>
       <select class="lang" aria-label="Language"></select>
@@ -34,6 +35,7 @@
 <div class="hazard"></div>
 
 <section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div>
       <span class="kicker" data-i18n="hero.kicker">Calorie counter &amp; workout log · retro style</span>
@@ -43,12 +45,12 @@
         <a class="btn" href="#install" data-i18n="hero.download">⬇ Download for iPhone</a>
         <a class="btn ghost" href="#features" data-i18n="hero.see">See what's inside</a>
       </div>
-      <p class="note" data-i18n="hero.note">Free to play · 50 AI credits when you sign up · iPhone</p>
+      <p class="note" data-i18n="hero.note2">Free to play · No account needed · iPhone</p>
     </div>
     <div class="phone">
-      <img src="img/1-hq.jpg" alt="Pulse HQ screen: calories left, macros, streak and Street Crew rank" width="900" height="1951">
+      <img src="img/shots/hq.jpg" alt="Pulse HQ screen: calories left, macros, a 9-day streak and the Block Boss rank" width="780" height="1696">
       <span class="sticker">+15 XP</span>
-      <span class="sticker b" data-i18n="hero.streak">2-DAY STREAK 🔥</span>
+      <span class="sticker b" data-i18n="hero.streak9">9-DAY STREAK 🔥</span>
     </div>
   </div>
   <div class="wrap">
@@ -66,34 +68,82 @@
     <div class="features">
       <div class="panel feature">
         <div class="icon" style="background:var(--violet)">🎙️</div>
-        <h3 data-i18n="f1.t">THE COACH</h3>
-        <p data-i18n="f1.p">Talk, type or send a photo. Your AI coach logs meals and workouts, answers questions, and builds meal and workout plans. Pick a personality: Sarge, MC Hype, Breeze, Sensei and more.</p>
+        <h3 data-i18n="g1.t">THE COACH</h3>
+        <p data-i18n="g1.p">Talk, type or send a photo. Your AI coach logs meals and workouts, answers training and nutrition questions, and talks back out loud. Reach it hands-free with Siri, the Action Button or Back Tap.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--cyan)">📸</div>
-        <h3 data-i18n="f2.t">SNAP &amp; SCAN</h3>
-        <p data-i18n="f2.p">Photograph a plate for instant calories and macros, or scan a barcode. Water, weight, sleep and mood are one tap away. Apple Health keeps your burned calories in sync.</p>
+        <h3 data-i18n="g2.t">SNAP &amp; SCAN</h3>
+        <p data-i18n="g2.p">Photograph a plate for instant calories and macros, or scan a barcode. Water, weight, sleep and mood are one tap away, and Apple Health keeps your burned calories in sync.</p>
+      </div>
+      <div class="panel feature">
+        <div class="icon" style="background:var(--orange)">🍽️</div>
+        <h3 data-i18n="g3.t">PLANS EVERY DAY</h3>
+        <p data-i18n="g3.p">Tell Pulse your goal and get calorie and macro targets for your body. Fresh meal and workout plans show up every morning, built around what you actually logged.</p>
+      </div>
+      <div class="panel feature">
+        <div class="icon" style="background:var(--pink)">🧠</div>
+        <h3 data-i18n="g4.t">MIND &amp; RECOVERY</h3>
+        <p data-i18n="g4.p">Tell the Coach how you slept and how your day went. Pulse turns it into a daily stress score and an illustrated journal, and shows how stress and sleep affect your progress.</p>
+      </div>
+      <div class="panel feature">
+        <div class="icon" style="background:var(--lime)">📈</div>
+        <h3 data-i18n="g5.t">STATS &amp; RECAPS</h3>
+        <p data-i18n="g5.p">7-day, 30-day and all-time trends for calories, protein, weight and workouts, with tips on what to improve. Every week ends with a comic-book recap you can share.</p>
+      </div>
+      <div class="panel feature">
+        <div class="icon" style="background:var(--yellow)">📷</div>
+        <h3 data-i18n="g6.t">PROGRESS PICS</h3>
+        <p data-i18n="g6.p">Add a few photos per day. Compare mode lines up your latest shot with an older one from the same angle, and Retro mode redraws your progress as 80s cartoon art.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--orange)">🔥</div>
-        <h3 data-i18n="f3.t">STREAKS &amp; RANKS</h3>
-        <p data-i18n="f3.p">Every log earns XP. Climb 15 Street Crew ranks from Rookie to Pulse Immortal, unlock new walls, and use streak freezes to save a missed day.</p>
+        <h3 data-i18n="g7.t">RANKS &amp; 30 WALLS</h3>
+        <p data-i18n="g7.p">Every log earns XP. Climb 15 Street Crew ranks from Rookie to Pulse Immortal and unlock 30 illustrated walls that become the background of the whole app.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--yellow)">🎯</div>
-        <h3 data-i18n="f4.t">DAILY QUESTS</h3>
-        <p data-i18n="f4.p">Three fresh quests every day, easy to hard. Clear them all for a Perfect Day bonus and earn tokens to spend in the arcade.</p>
+        <h3 data-i18n="g8.t">QUESTS &amp; SEASONS</h3>
+        <p data-i18n="g8.p">Three fresh quests every day and five challenges every month. Clear them for Perfect Day bonuses, season badges, tokens and streak freezes.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--lime)">🕹️</div>
-        <h3 data-i18n="f5.t">STRESS ARCADE</h3>
-        <p data-i18n="f5.p">One-minute brain games for a quick reset. Win Brain Gym rounds for silver and gold chests packed with tokens, XP, freezes and rare avatars.</p>
+        <h3 data-i18n="g9.t">STRESS ARCADE</h3>
+        <p data-i18n="g9.p">One-minute brain games for a quick reset. Win Brain Gym rounds for silver and gold chests with tokens, XP, freezes, rare avatars and app icons.</p>
       </div>
       <div class="panel feature">
         <div class="icon" style="background:var(--pink)">🤜</div>
-        <h3 data-i18n="f6.t">SQUAD BATTLES</h3>
-        <p data-i18n="f6.p">Add friends, check the leaderboard and start challenges solo or head to head. Flip on Hard Mode for a tougher goal and a gold chest.</p>
+        <h3 data-i18n="g10.t">SQUAD &amp; CREWS</h3>
+        <p data-i18n="g10.p">Add friends with a link, check the weekly board and start challenges solo or head to head. Crews of up to 8 keep a shared streak alive.</p>
       </div>
+      <div class="panel feature">
+        <div class="icon" style="background:var(--violet)">📼</div>
+        <h3 data-i18n="g11.t">THE JUKEBOX</h3>
+        <p data-i18n="g11.p">30 original synthwave and Italo-disco tracks that unlock as you play. Music pauses while the Coach talks.</p>
+      </div>
+      <div class="panel feature">
+        <div class="icon" style="background:var(--cyan)">👑</div>
+        <h3 data-i18n="g12.t">MAKE IT YOURS</h3>
+        <p data-i18n="g12.p">24 illustrated avatars and 6 app icons, from Classic to Gold Legend. Rank up, keep a streak or open chests to unlock them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coaches">
+  <div class="wrap">
+    <h2 class="section-title outline" data-i18n="coaches.title">PICK YOUR COACH</h2>
+    <p class="section-sub" data-i18n="coaches.sub">Nine coaches, nine attitudes, each with its own voice. Switch any time in Crew.</p>
+    <div class="coaches">
+      <figure class="coach-card"><img src="img/coaches/pulse.jpg" alt="Pulse" loading="lazy" width="480" height="642"><figcaption><strong>Pulse</strong><span data-i18n="coach.pulse">Upbeat, smart, always in your corner.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/sarge.jpg" alt="Sarge" loading="lazy" width="480" height="642"><figcaption><strong>Sarge</strong><span data-i18n="coach.sarge">Drill-sergeant tough love. No excuses.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/hype.jpg" alt="MC Hype" loading="lazy" width="480" height="642"><figcaption><strong>MC Hype</strong><span data-i18n="coach.hype">Hip-hop hype man. Every rep is a headline.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/breeze.jpg" alt="Breeze" loading="lazy" width="480" height="642"><figcaption><strong>Breeze</strong><span data-i18n="coach.breeze">Laid-back surfer. Progress, no pressure.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/sensei.jpg" alt="Sensei" loading="lazy" width="480" height="642"><figcaption><strong>Sensei</strong><span data-i18n="coach.sensei">Calm and mindful. Discipline with grace.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/dre.jpg" alt="Dre" loading="lazy" width="480" height="642"><figcaption><strong>Dre</strong><span data-i18n="coach.dre">Bronx boxing-gym coach. Real talk, big heart.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/sofia.jpg" alt="Sofía" loading="lazy" width="480" height="642"><figcaption><strong>Sofía</strong><span data-i18n="coach.sofia">Miami trainer with fire. Habla español too.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/jazz.jpg" alt="Jazz" loading="lazy" width="480" height="642"><figcaption><strong>Jazz</strong><span data-i18n="coach.jazz">Fabulous, proudly queer hype coach. Iconic only.</span></figcaption></figure>
+      <figure class="coach-card"><img src="img/coaches/rex.jpg" alt="Rex" loading="lazy" width="480" height="642"><figcaption><strong>Rex</strong><span data-i18n="coach.rex">80s action hero. Every day is a training montage.</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -106,11 +156,16 @@
       <button class="arrow prev" type="button" aria-label="Previous screen" data-i18n-aria="screens.prev">‹</button>
       <div class="viewport">
         <div class="track">
-      <figure><img src="img/1-hq.jpg" alt="HQ: daily calories, macros and streak" loading="lazy" width="900" height="1951"><figcaption>HQ</figcaption></figure>
-      <figure><img src="img/2-coach.jpg" alt="Coach: chat with your AI coach" loading="lazy" width="900" height="1951"><figcaption>COACH</figcaption></figure>
-      <figure><img src="img/3-arcade.jpg" alt="Stress Arcade: chests and brain games" loading="lazy" width="900" height="1951"><figcaption>ARCADE</figcaption></figure>
-      <figure><img src="img/4-stats.jpg" alt="Stats: trends and history" loading="lazy" width="900" height="1951"><figcaption data-i18n="cap.stats">STATS</figcaption></figure>
-      <figure><img src="img/5-ranks.jpg" alt="Ranks: the Street Crew ladder" loading="lazy" width="900" height="1951"><figcaption data-i18n="cap.ranks">RANKS</figcaption></figure>
+      <figure><img src="img/shots/hq.jpg" alt="HQ: calories left, macros, streak and rank" loading="lazy" width="780" height="1696"><figcaption>HQ</figcaption></figure>
+      <figure><img src="img/shots/coach.jpg" alt="Coach: log meals by voice and ask questions" loading="lazy" width="780" height="1696"><figcaption>COACH</figcaption></figure>
+      <figure><img src="img/shots/stats.jpg" alt="Stats: weekly averages and what to improve" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.stats">STATS</figcaption></figure>
+      <figure><img src="img/shots/recap.jpg" alt="Weekly recap in comic-book style" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.recap">RECAP</figcaption></figure>
+      <figure><img src="img/shots/ranks.jpg" alt="Crew Ranks: the 15-rank ladder and its walls" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.ranks">RANKS</figcaption></figure>
+      <figure><img src="img/shots/wall-unlock.jpg" alt="A new wall unlocked" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.walls">WALLS</figcaption></figure>
+      <figure><img src="img/shots/arcade.jpg" alt="Stress Arcade: chests and brain games" loading="lazy" width="780" height="1696"><figcaption>ARCADE</figcaption></figure>
+      <figure><img src="img/shots/season.jpg" alt="Monthly season challenges" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.season">SEASON</figcaption></figure>
+      <figure><img src="img/shots/avatars.jpg" alt="Pick your avatar" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.avatars">AVATARS</figcaption></figure>
+      <figure><img src="img/shots/jukebox.jpg" alt="The jukebox: original synthwave tracks" loading="lazy" width="780" height="1696"><figcaption data-i18n="cap.jukebox">JUKEBOX</figcaption></figure>
         </div>
       </div>
       <button class="arrow next" type="button" aria-label="Next screen" data-i18n-aria="screens.next">›</button>
@@ -119,21 +174,114 @@
   </div>
 </section>
 
+<section id="walls">
+  <div class="wrap">
+    <h2 class="section-title outline" data-i18n="walls.title">30 WALLS TO UNLOCK</h2>
+    <p class="section-sub" data-i18n="walls.sub">Every wall is hand-illustrated and becomes the backdrop of the whole app. Unlock them by ranking up, keeping streaks, logging days and opening chests.</p>
+  </div>
+  <div class="walls" aria-label="Unlockable walls">
+    <div class="walls-track">
+      <img src="img/walls/alley.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/handball.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/court.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/bodega.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/hydrant.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/rooftop.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/platform.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/night-train.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/yard.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/bridge.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/arcade.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/club.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/square.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/hall.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/tower.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/underground.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/video.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/boardwalk.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/diner.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/rink.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/fireworks.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/gold-line.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/records.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/radio.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/highway.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/laser.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/pool.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/skate.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/carwash.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/helipad.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/alley.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/handball.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/court.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/bodega.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/hydrant.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/rooftop.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/platform.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/night-train.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/yard.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/bridge.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/arcade.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/club.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/square.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/hall.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/tower.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/underground.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/video.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/boardwalk.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/diner.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/rink.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/fireworks.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/gold-line.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/records.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/radio.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/highway.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/laser.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/pool.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/skate.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/carwash.jpg" alt="" loading="lazy" width="360" height="645">
+      <img src="img/walls/helipad.jpg" alt="" loading="lazy" width="360" height="645">
+    </div>
+  </div>
+</section>
+
 <section id="crew">
   <div class="wrap">
     <h2 class="section-title outline" data-i18n="crew.title">REP YOUR CREW</h2>
-    <p class="section-sub" data-i18n="crew.sub">Pick your avatar. Unlock more as you rank up or spend XP, and hunt chests for the rare ones.</p>
+    <p class="section-sub" data-i18n="crew.sub2">24 illustrated avatars and 6 app icons. Unlock more as you rank up or spend XP, and hunt chests for the rare ones.</p>
     <div class="crew">
-      <figure><div class="ring"><img src="img/avatars/spray.svg" alt="" loading="lazy"></div><figcaption>Spray Can</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/boombox.svg" alt="" loading="lazy"></div><figcaption>Boombox</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/token.svg" alt="" loading="lazy"></div><figcaption>Subway Token</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/bboy.svg" alt="" loading="lazy"></div><figcaption>B-Boy</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/crown.svg" alt="" loading="lazy"></div><figcaption>King Crown · rare</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/cassette.svg" alt="" loading="lazy"></div><figcaption>Mixtape</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/mic.svg" alt="" loading="lazy"></div><figcaption>Open Mic</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/train.svg" alt="" loading="lazy"></div><figcaption>Painted Train</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/sneaker.svg" alt="" loading="lazy"></div><figcaption>Fresh Kicks</figcaption></figure>
-      <figure><div class="ring"><img src="img/avatars/skull.svg" alt="" loading="lazy"></div><figcaption>Drip Skull · rare</figcaption></figure>
+      <div class="ring"><img src="img/avatars-art/spray.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/boombox.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/cassette.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/bboy.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/boxer.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/crown.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/dj.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/mic.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/ninja.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/punk.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/robot.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/skate.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/skull.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/sneaker.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/token.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/train.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/vhs.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/walkman.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/writer.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/aerobics.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/arcadeKid.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/cyborg.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/skateboarder.jpg" alt="" loading="lazy" width="220" height="220"></div>
+      <div class="ring"><img src="img/avatars-art/skater.jpg" alt="" loading="lazy" width="220" height="220"></div>
+    </div>
+    <div class="icons">
+      <figure><img src="img/icons/classic.jpg" alt="" loading="lazy" width="240" height="240"><figcaption data-i18n="icon.classic">Classic</figcaption></figure>
+      <figure><img src="img/icons/synthwave.jpg" alt="" loading="lazy" width="240" height="240"><figcaption>Synthwave</figcaption></figure>
+      <figure><img src="img/icons/neon-sign.jpg" alt="" loading="lazy" width="240" height="240"><figcaption data-i18n="icon.neon">Neon Sign</figcaption></figure>
+      <figure><img src="img/icons/midnight-rain.jpg" alt="" loading="lazy" width="240" height="240"><figcaption data-i18n="icon.rain">Midnight Rain</figcaption></figure>
+      <figure><img src="img/icons/arcade.jpg" alt="" loading="lazy" width="240" height="240"><figcaption>Arcade</figcaption></figure>
+      <figure><img src="img/icons/gold-legend.jpg" alt="" loading="lazy" width="240" height="240"><figcaption data-i18n="icon.gold">Gold Legend</figcaption></figure>
     </div>
   </div>
 </section>
@@ -160,7 +308,7 @@
         <div class="panel">
           <span class="badge soon" data-i18n="badge.soon">Coming soon</span>
           <h3 data-i18n="store.t">APP STORE</h3>
-          <p style="margin:0;color:#cfcdc6" data-i18n="store.p">Pulse 1.0 is in App Review. This page will link straight to the App Store when it's live.</p>
+          <p style="margin:0;color:#cfcdc6" data-i18n="store.p2">Pulse 1.1 is in App Review. This page will link straight to the App Store when it's live.</p>
         </div>
         <div class="panel">
           <span class="badge adv" data-i18n="badge.adv">Advanced</span>
@@ -179,8 +327,8 @@
     <h2 class="section-title outline" data-i18n="support.title">SUPPORT</h2>
     <p class="section-sub" data-i18n-html="support.sub">Questions, bugs or feedback: <a href="mailto:slugics@gmail.com">slugics@gmail.com</a>. We usually reply within 2 business days.</p>
     <div class="panel faq">
-      <details><summary data-i18n="faq1.q">How do AI credits work?</summary><p data-i18n-html="faq1.a">The Coach, plans and recaps use AI credits. New accounts get 50 free credits. You can buy credit packs or subscribe to Pulse Pro in Crew → Credits, where the cost of each feature is listed. You can also earn free credits by inviting friends or trading XP.</p></details>
-      <details><summary data-i18n="faq2.q">How do I restore purchases?</summary><p data-i18n-html="faq2.a">Crew → Credits → Restore purchases. Sign in with the same Apple ID you bought with.</p></details>
+      <details><summary data-i18n="faq1.q">How do AI credits work?</summary><p data-i18n-html="faq1.a2">The Coach, plans and recaps use AI credits. Buy credit packs or subscribe to Pulse Pro in Crew → Get more credits, no account needed. The cost of each feature is listed there. Sign in with Apple to get 50 free credits, back up your progress and use your credits on all your devices.</p></details>
+      <details><summary data-i18n="faq2.q">How do I restore purchases?</summary><p data-i18n-html="faq2.a2">Crew → Get more credits → Restore purchases, on a device signed in to the same Apple ID you bought with.</p></details>
       <details><summary data-i18n="faq3.q">How do I cancel Pulse Pro?</summary><p data-i18n-html="faq3.a">iPhone Settings → your name → Subscriptions → Pulse Pro → Cancel. You keep your credits until the end of the period.</p></details>
       <details><summary data-i18n="faq4.q">How do I delete my account?</summary><p data-i18n-html="faq4.a">Crew → Account → Delete account. This deletes your account, credits and cloud backup.</p></details>
       <details><summary data-i18n="faq5.q">How do I change the language?</summary><p data-i18n-html="faq5.a">Pulse follows your iPhone's language. To change it just for Pulse: Settings → Apps → Pulse → Language.</p></details>
