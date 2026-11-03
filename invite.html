@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>You're Invited to Pulse</title>
-<meta name="description" content="A friend invited you to Pulse, the AI fitness coach built like an arcade game. Join their squad and log together.">
+<title data-i18n="inv.title">You're Invited to Pulse</title>
+<meta name="description" data-i18n-content="inv.desc" content="A friend invited you to Pulse, the AI fitness coach built like an arcade game. Join their squad and log together.">
 <meta property="og:title" content="You're invited to Pulse">
 <meta property="og:description" content="Join your friend on Pulse and log together.">
-<meta property="og:image" content="https://sslugic.github.io/pulse-site/img/icon.png">
+<meta property="og:image" content="https://pulseretro.fit/img/icon.png">
 <meta name="theme-color" content="#0b0c0d">
 <link rel="icon" href="img/icon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -21,48 +21,61 @@
   .steps { text-align: left; margin: 24px 0; }
   .steps li { margin: 8px 0; color: #dcdad3; }
   .stack { display: grid; gap: 12px; justify-items: center; }
+  .lang-bar { position: absolute; top: 18px; right: 16px; }
 </style>
 </head>
 <body>
 <div class="hazard"></div>
+<div class="lang-bar"><select class="lang" aria-label="Language"></select></div>
 <div class="invite">
   <img class="logo" src="img/icon.png" alt="Pulse">
-  <span class="tag" style="color:var(--lime);font-size:1.2rem">Your crew is calling</span>
-  <h1 class="outline">YOU'RE INVITED<br>TO PULSE</h1>
-  <p style="color:#dcdad3">Your friend wants you in their squad: log meals and workouts together and see who keeps the streak.</p>
+  <span class="tag" style="color:var(--lime);font-size:1.2rem" data-i18n="inv.tag">Your crew is calling</span>
+  <h1 class="outline" data-i18n-html="inv.h1">YOU'RE INVITED<br>TO PULSE</h1>
+  <p style="color:#dcdad3" data-i18n-html="inv.pSquad">A friend wants you on their <strong>Squad leaderboard</strong>. Open this link on your iPhone with Pulse installed and you’re in.</p>
   <div id="code-wrap" hidden>
-    <button class="code" id="code" title="Tap to copy"></button>
-    <p class="dim" id="copied">Tap the code to copy it</p>
+    <button class="code" id="code" title="Tap to copy" data-i18n-title="inv.copyTitle"></button>
+    <p class="dim" id="copied" data-i18n="inv.tap">Tap the code to copy it</p>
   </div>
   <div class="panel steps">
     <ol>
-      <li>Get Pulse from the beta on TestFlight (free).</li>
-      <li>Open it and sign in with Apple in Crew → Account.</li>
-      <li>Tap <strong>Open in Pulse</strong> below to find your friend in the Squad tab.</li>
+      <li data-i18n="inv.s1">Get Pulse from the beta on TestFlight (free).</li>
+      <li data-i18n="inv.s2">Open it and sign in with Apple in Crew → Account.</li>
+      <li data-i18n-html="inv.s3Squad">Tap <strong>Open in Pulse</strong> below. Pulse finishes the rest once you’re signed in.</li>
     </ol>
   </div>
   <div class="stack">
-    <a class="btn" id="open" href="pulse://">Open in Pulse</a>
-    <a class="btn ghost" href="https://testflight.apple.com/join/YmezgdX3">⬇ Get Pulse</a>
-    <a href="./" class="dim">What's Pulse?</a>
+    <a class="btn" id="open" href="pulse://" data-i18n="inv.open">Open in Pulse</a>
+    <a class="btn ghost" href="https://testflight.apple.com/join/YmezgdX3" data-i18n="inv.get">⬇ Get Pulse</a>
+    <a href="./" class="dim" data-i18n="inv.what">What's Pulse?</a>
   </div>
 </div>
 <script>
-  // invite.html?r=CODE: show the code and hand it to the app through pulse://r/CODE.
+  // invite.html?f=CODE (friend), ?c=CODE (crew) or ?r=CODE (an older referral link, now a Squad invite). With Pulse installed, iOS opens
+  // the app straight from the link (universal link); otherwise this page shows the code and an Open
+  // button that hands it to the app through pulse://add/CODE, pulse://join/CODE or pulse://r/CODE.
   (function () {
-    var raw = new URLSearchParams(location.search).get('r') || '';
+    var q = new URLSearchParams(location.search);
+    var route = q.get('f') ? 'add' : q.get('c') ? 'join' : 'r';
+    var raw = q.get('f') || q.get('c') || q.get('r') || '';
     var code = raw.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 16);
     if (!code) return;
+    if (route === 'join') {
+      // A crew invite: swap in the crew wording before translations apply.
+      var lead = document.querySelector('[data-i18n-html="inv.pSquad"]');
+      lead.setAttribute('data-i18n-html', 'inv.pCrew');
+      lead.innerHTML = 'Your crew wants you in. Open this link on your iPhone with Pulse installed and you <strong>join the crew automatically</strong>.';
+    }
     document.getElementById('code-wrap').hidden = false;
     var el = document.getElementById('code');
     el.textContent = code;
     el.addEventListener('click', function () {
       if (navigator.clipboard) navigator.clipboard.writeText(code).then(function () {
-        document.getElementById('copied').textContent = 'Copied!';
+        document.getElementById('copied').textContent = window.pulseI18n ? pulseI18n.t('inv.copied', 'Copied!') : 'Copied!';
       }).catch(function () {});
     });
-    document.getElementById('open').href = 'pulse://r/' + encodeURIComponent(code);
+    document.getElementById('open').href = 'pulse://' + route + '/' + encodeURIComponent(code);
   })();
 </script>
+<script src="i18n.js"></script>
 </body>
 </html>

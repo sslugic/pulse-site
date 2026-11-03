@@ -183,3 +183,8 @@ main nav { display: flex; gap: 16px; margin: 8px 0 24px; flex-wrap: wrap; font-f
 ul { padding-left: 20px; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+
+/* Language picker (i18n.js fills the options). Stays visible on phones, unlike the other nav links. */
+select.lang { font-family: var(--block); font-size: 0.8rem; color: var(--text); background: var(--card); border: 2px solid var(--dim); border-radius: 8px; padding: 4px 6px; cursor: pointer; }
+select.lang:hover, select.lang:focus { border-color: var(--lime); outline: none; }
+main nav select.lang { margin-left: auto; }
