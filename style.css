@@ -150,22 +150,54 @@ section { padding: 56px 0; }
 @media (prefers-reduced-motion: reduce) { .shots .track, .shots figure { transition: none; } }
 .shots figcaption { font-family: var(--comic); font-size: 1.3rem; letter-spacing: 0.05em; margin-top: 10px; text-align: center; }
 
-.coaches { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
-.coach-card { flex: 0 0 calc((100% - 64px) / 5); margin: 0; background: var(--card); border: 3px solid var(--ink); border-radius: 16px; overflow: hidden; box-shadow: 5px 5px 0 var(--ink); }
-.coach-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-bottom: 3px solid var(--ink); }
-.coach-card figcaption { padding: 10px 12px 12px; }
-.coach-card strong { display: block; font-family: var(--comic); font-size: 1.5rem; letter-spacing: 0.05em; font-weight: 400; line-height: 1.1; }
-.coach-card span { display: block; color: var(--dim); font-size: 0.85rem; line-height: 1.4; }
-@media (max-width: 860px) { .coach-card { flex-basis: calc((100% - 32px) / 3); } }
-@media (max-width: 560px) { .coaches { gap: 12px; } .coach-card { flex-basis: calc((100% - 12px) / 2); } }
+/* Coaches: trading-card style, three across. */
+.coaches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.coach-card {
+  display: flex; flex-direction: column; background: linear-gradient(180deg, #23272a, #16181a);
+  border: 3px solid var(--ink); border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 2px #3a3f44 inset, 6px 6px 0 var(--ink);
+}
+.coach-art { position: relative; border-bottom: 3px solid var(--ink); }
+.coach-art img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; }
+.coach-art::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(180deg, transparent, rgba(11, 12, 13, 0.92)); }
+.coach-art h3 {
+  position: absolute; left: 14px; bottom: 10px; z-index: 1; margin: 0;
+  font-family: var(--comic); font-weight: 400; font-size: 2.3rem; letter-spacing: 0.05em; line-height: 1;
+  color: var(--text); text-shadow: 3px 3px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink);
+}
+.coach-no, .wall-no {
+  position: absolute; top: 10px; left: 10px; z-index: 1; font-family: var(--block); font-size: 0.75rem;
+  color: var(--ink); background: var(--yellow); border: 2px solid var(--ink); border-radius: 6px; padding: 1px 7px; box-shadow: 2px 2px 0 var(--ink);
+}
+.coach-body { padding: 14px 16px 18px; display: grid; gap: 8px; }
+.coach-body p { margin: 0; }
+.coach-from { font-family: var(--tag); color: var(--yellow); font-size: 1.05rem; line-height: 1.3; }
+.coach-tag { font-family: var(--block); color: var(--lime); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.35; }
+.coach-bio { color: #cfcdc6; font-size: 0.95rem; line-height: 1.55; }
+@media (max-width: 860px) { .coaches { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .coaches { grid-template-columns: 1fr; } .coach-art img { aspect-ratio: 1; } }
 
-/* The walls drift past in a loop (the list is doubled so it wraps without a seam). */
-.walls { overflow: hidden; padding: 6px 0 14px; }
-.walls-track { display: flex; gap: 14px; width: max-content; animation: walls-drift 120s linear infinite; }
-.walls:hover .walls-track { animation-play-state: paused; }
-.walls img { width: 150px; aspect-ratio: 9 / 16; object-fit: cover; border: 3px solid var(--ink); border-radius: 14px; box-shadow: 4px 4px 0 var(--ink); }
-@keyframes walls-drift { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .walls { overflow-x: auto; } .walls-track { animation: none; } }
+/* Walls: a numbered gallery, grouped by how each one unlocks. */
+.wall-group { font-family: var(--tag); font-weight: 400; color: var(--lime); font-size: 1.5rem; margin: 30px 0 14px; transform: rotate(-1deg); }
+.wall-group:first-of-type { margin-top: 8px; }
+.walls { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.wall-card {
+  display: flex; flex-direction: column; background: var(--card); border: 3px solid var(--ink); border-radius: 14px;
+  overflow: hidden; box-shadow: 5px 5px 0 var(--ink);
+}
+.wall-art { position: relative; border-bottom: 3px solid var(--ink); }
+.wall-art img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 40%; }
+.wall-unlock {
+  position: absolute; right: 8px; bottom: 8px; font-family: var(--block); font-size: 0.66rem; letter-spacing: 0.03em;
+  color: var(--ink); background: var(--lime); border: 2px solid var(--ink); border-radius: 6px; padding: 1px 6px;
+}
+.wall-unlock.streak { background: var(--orange); }
+.wall-unlock.days { background: var(--cyan); }
+.wall-unlock.chest { background: var(--pink); }
+.wall-card h4 { font-family: var(--comic); font-weight: 400; font-size: 1.35rem; letter-spacing: 0.05em; line-height: 1.05; margin: 10px 12px 4px; }
+.wall-card p { margin: 0 12px 14px; color: var(--dim); font-size: 0.84rem; line-height: 1.5; }
+@media (max-width: 960px) { .walls { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 760px) { .walls { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .walls { grid-template-columns: repeat(2, 1fr); gap: 12px; } .wall-card h4 { font-size: 1.15rem; } }
 
 .crew { display: grid; grid-template-columns: repeat(8, 1fr); gap: 12px; }
 .crew figure { margin: 0; text-align: center; }
