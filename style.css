@@ -221,6 +221,7 @@ section { padding: 56px 0; }
 .install .badge.adv { background: var(--violet); }
 .install h3 { font-family: var(--comic); font-size: 2rem; letter-spacing: 0.04em; margin: 10px 0 4px; }
 .install .side { display: grid; gap: 18px; }
+.install.solo { grid-template-columns: minmax(0, 640px); }
 @media (max-width: 860px) { .install { grid-template-columns: 1fr; } }
 
 /* ---------- faq ---------- */
