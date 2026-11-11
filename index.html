@@ -8,13 +8,14 @@
 <meta property="og:title" content="Pulse: Retro Fitness Tracker">
 <meta property="og:description" content="Count calories, log workouts, keep your streak. A fitness tracker with an 80s retro style.">
 <meta property="og:image" content="https://pulseretro.fit/img/icon.png">
+<meta name="apple-itunes-app" content="app-id=6824666479">
 <meta name="theme-color" content="#0b0c0d">
 <link rel="icon" href="img/icon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Russo+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -27,7 +28,7 @@
       <a href="#screens" data-i18n="nav.screens">Screens</a>
       <a href="#support" data-i18n="nav.support">Support</a>
       <select class="lang" aria-label="Language"></select>
-      <a class="btn" href="#install" data-i18n="nav.getIt">Get it</a>
+      <a class="btn" href="https://apps.apple.com/app/id6824666479" data-i18n="nav.getIt">Get it</a>
     </nav>
   </div>
 </header>
@@ -42,7 +43,7 @@
       <h1 class="outline" data-i18n-html="hero.title">LOG IT.<br>STACK XP.<br><span class="drip">RUN THE BLOCK.</span></h1>
       <p class="lead" data-i18n="hero.lead2">Pulse is an actual fitness app with that nostalgic 80s vibe. Tell the Coach what you ate, snap a photo or scan a barcode, and it handles the calories and macros. Every log earns XP, streaks multiply it, and quests, chests and challenges keep you coming back.</p>
       <div class="ctas">
-        <a class="btn" href="#install" data-i18n="hero.download">⬇ Download for iPhone</a>
+        <a class="btn" href="https://apps.apple.com/app/id6824666479" data-i18n="hero.appStore">⬇ Get it on the App Store</a>
         <a class="btn ghost" href="#features" data-i18n="hero.see">See what's inside</a>
       </div>
       <p class="note" data-i18n="hero.note3">Free download · Optional Sign in with Apple · iPhone</p>
@@ -452,30 +453,31 @@
 <section id="install">
   <div class="wrap">
     <h2 class="section-title outline" data-i18n="install.title">GET PULSE ON YOUR IPHONE</h2>
-    <p class="section-sub" data-i18n="install.sub">Pulse is in public beta on TestFlight, Apple's official beta app. Anyone can join, and it's free.</p>
+    <p class="section-sub" data-i18n="install.sub2">Pulse is free on the App Store for iPhone. Want new features before everyone else? Join the beta on TestFlight.</p>
     <div class="install">
       <div class="panel">
-        <span class="badge" data-i18n="badge.rec">Recommended</span>
-        <h3 data-i18n="beta.t">JOIN THE BETA</h3>
-        <ol>
-          <li data-i18n-html="beta.1">Install <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> from the App Store.</li>
-          <li data-i18n-html="beta.2">On your iPhone, tap <strong>Join the beta</strong> below, then <strong>Accept</strong>.</li>
-          <li data-i18n-html="beta.3">Tap <strong>Install</strong>. Pulse lands on your home screen and updates automatically.</li>
-        </ol>
-        <a class="btn" href="https://testflight.apple.com/join/YmezgdX3" data-i18n="beta.btn">⬇ Join the beta</a>
+        <span class="badge" data-i18n="badge.live">Now live</span>
+        <h3 data-i18n="store.t">APP STORE</h3>
+        <p style="margin:0 0 18px;color:#cfcdc6" data-i18n="store.p3">Free to download. AI credits and Pulse Pro are optional in-app purchases, and you don't need an account to buy them.</p>
+        <a class="btn" href="https://apps.apple.com/app/id6824666479" data-i18n="store.btn">⬇ Download on the App Store</a>
         <p class="dim" style="margin-top:14px" data-i18n="beta.note">Opening this page on a computer? Send the link to your phone.</p>
       </div>
       <div class="side">
         <div class="panel">
-          <span class="badge soon" data-i18n="badge.soon">Coming soon</span>
-          <h3 data-i18n="store.t">APP STORE</h3>
-          <p style="margin:0;color:#cfcdc6" data-i18n="store.p2">Pulse 1.1 is in App Review. This page will link straight to the App Store when it's live.</p>
+          <span class="badge soon" data-i18n="badge.early">Early access</span>
+          <h3 data-i18n="beta.t">JOIN THE BETA</h3>
+          <ol>
+            <li data-i18n-html="beta.1">Install <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> from the App Store.</li>
+            <li data-i18n-html="beta.2">On your iPhone, tap <strong>Join the beta</strong> below, then <strong>Accept</strong>.</li>
+            <li data-i18n-html="beta.3">Tap <strong>Install</strong>. Pulse lands on your home screen and updates automatically.</li>
+          </ol>
+          <a class="btn alt" href="https://testflight.apple.com/join/YmezgdX3" data-i18n="beta.btn">⬇ Join the beta</a>
         </div>
         <div class="panel">
           <span class="badge adv" data-i18n="badge.adv">Advanced</span>
           <h3 data-i18n="ipa.t">DOWNLOAD THE .IPA</h3>
           <p style="margin:0 0 14px;color:#cfcdc6" data-i18n="ipa.p">The latest build is on GitHub. iPhones only install apps from the App Store or TestFlight, so you need a sideloading tool like AltStore or Sideloadly to re-sign it with your own Apple ID.</p>
-          <a class="btn alt" href="https://github.com/sslugic/pulse/releases/latest/download/Pulse.ipa">⬇ Pulse.ipa</a>
+          <a class="btn ghost" href="https://github.com/sslugic/pulse/releases/latest/download/Pulse.ipa">⬇ Pulse.ipa</a>
           <p class="dim" style="margin-top:10px"><a href="https://github.com/sslugic/pulse/releases" data-i18n="ipa.all">All releases</a></p>
         </div>
       </div>
@@ -589,6 +591,6 @@
     });
   });
 </script>
-<script src="i18n.js?v=5"></script>
+<script src="i18n.js?v=6"></script>
 </body>
 </html>
