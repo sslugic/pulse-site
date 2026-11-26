@@ -13,7 +13,7 @@
     'priv.title': `Pulse · Política de privacidad`,
     'priv.h1': `<span>PULSE</span> Política de privacidad`,
     'priv.body': `
-<p class="dim">Última actualización: 22 de octubre de 2026 · Traducción de cortesía; si hay diferencias, prevalece la versión en inglés.</p>
+<p class="dim">Última actualización: 26 de noviembre de 2026 · Traducción de cortesía; si hay diferencias, prevalece la versión en inglés.</p>
 <p>Esta política explica qué recopila la app Pulse («Pulse», «nosotros»), para qué y qué puedes hacer al respecto. Contacto: ${MAIL}.</p>
 <h2>Qué recopilamos</h2>
 <ul>
@@ -35,6 +35,7 @@
 <h2>Quién trata tus datos</h2>
 <ul>
 <li><strong>Supabase</strong> (base de datos, inicio de sesión y funciones de servidor, alojado en Canadá).</li>
+<li><strong>PostHog</strong> (solo este sitio web, no la app): cuenta las visitas a las páginas y qué enlace te trajo aquí, como las etiquetas de campaña (utm_source, utm_campaign). Sin cookies, nada se guarda en tu dispositivo, no se registran clics ni lo que escribes y el resto de la dirección se descarta. No se cuenta nada si tu navegador envía Do Not Track.</li>
 <li><strong>API Gemini de Google</strong> (respuestas de IA). Las peticiones pasan por nuestra cuenta de pago; según esas condiciones, Google no las usa para entrenar sus modelos.</li>
 <li><strong>RevenueCat</strong> y <strong>Apple</strong> (compras dentro de la app y suscripciones).</li>
 <li><strong>Servicio de notificaciones push de Apple</strong> (entrega de toques de amigos, si permites notificaciones).</li>
@@ -89,7 +90,7 @@
     'priv.title': `Pulse · Datenschutzerklärung`,
     'priv.h1': `<span>PULSE</span> Datenschutz`,
     'priv.body': `
-<p class="dim">Zuletzt aktualisiert: 22. Oktober 2026 · Übersetzung zur Information; bei Abweichungen gilt die englische Fassung.</p>
+<p class="dim">Zuletzt aktualisiert: 26. November 2026 · Übersetzung zur Information; bei Abweichungen gilt die englische Fassung.</p>
 <p>Diese Erklärung beschreibt, was die App Pulse („Pulse“, „wir“) erhebt, warum, und was du dagegen tun kannst. Kontakt: ${MAIL}.</p>
 <h2>Was wir erheben</h2>
 <ul>
@@ -111,6 +112,7 @@
 <h2>Wer deine Daten verarbeitet</h2>
 <ul>
 <li><strong>Supabase</strong> (Datenbank, Anmeldung und Serverfunktionen, gehostet in Kanada).</li>
+<li><strong>PostHog</strong> (nur diese Website, nicht die App): zählt Seitenaufrufe und über welchen Link du gekommen bist, etwa Kampagnen-Tags (utm_source, utm_campaign). Keine Cookies, nichts wird auf deinem Gerät gespeichert, keine Klicks oder Eingaben werden erfasst, und der Rest der Seitenadresse wird verworfen. Sendet dein Browser „Do Not Track“, wird nichts gezählt.</li>
 <li><strong>Google Gemini API</strong> (KI-Antworten). Anfragen laufen über unser bezahltes API-Konto; unter diesen Bedingungen nutzt Google sie nicht zum Trainieren seiner Modelle.</li>
 <li><strong>RevenueCat</strong> und <strong>Apple</strong> (In-App-Käufe und Abos).</li>
 <li><strong>Apple Push Notification Service</strong> (Zustellung von Stupsern deiner Freunde, falls du Mitteilungen erlaubst).</li>
@@ -165,7 +167,7 @@
     'priv.title': `Pulse · Politique de confidentialité`,
     'priv.h1': `<span>PULSE</span> Confidentialité`,
     'priv.body': `
-<p class="dim">Dernière mise à jour : 22 octobre 2026 · Traduction fournie à titre indicatif ; en cas de différence, la version anglaise prévaut.</p>
+<p class="dim">Dernière mise à jour : 26 novembre 2026 · Traduction fournie à titre indicatif ; en cas de différence, la version anglaise prévaut.</p>
 <p>Cette politique explique ce que l’app Pulse (« Pulse », « nous ») collecte, pourquoi, et ce que tu peux faire. Contact : ${MAIL}.</p>
 <h2>Ce que nous collectons</h2>
 <ul>
@@ -187,6 +189,7 @@
 <h2>Qui traite tes données</h2>
 <ul>
 <li><strong>Supabase</strong> (base de données, connexion et fonctions serveur, hébergé au Canada).</li>
+<li><strong>PostHog</strong> (ce site web uniquement, pas l’app) : compte les visites des pages et le lien qui vous a amené ici, comme les balises de campagne (utm_source, utm_campaign). Aucun cookie, rien n’est stocké sur votre appareil, aucun clic ni saisie n’est enregistré, et le reste de l’adresse est supprimé. Rien n’est compté si votre navigateur envoie Do Not Track.</li>
 <li><strong>API Google Gemini</strong> (réponses IA). Les requêtes passent par notre compte API payant ; selon ces conditions, Google ne les utilise pas pour entraîner ses modèles.</li>
 <li><strong>RevenueCat</strong> et <strong>Apple</strong> (achats intégrés et abonnements).</li>
 <li><strong>Service de notifications push d’Apple</strong> (envoi des rappels de tes amis, si tu autorises les notifications).</li>
@@ -241,7 +244,7 @@
     'priv.title': `Pulse · Informativa sulla privacy`,
     'priv.h1': `<span>PULSE</span> Privacy`,
     'priv.body': `
-<p class="dim">Ultimo aggiornamento: 22 ottobre 2026 · Traduzione di cortesia; in caso di differenze prevale la versione inglese.</p>
+<p class="dim">Ultimo aggiornamento: 26 novembre 2026 · Traduzione di cortesia; in caso di differenze prevale la versione inglese.</p>
 <p>Questa informativa spiega cosa raccoglie l’app Pulse («Pulse», «noi»), perché e cosa puoi fare al riguardo. Contatto: ${MAIL}.</p>
 <h2>Cosa raccogliamo</h2>
 <ul>
@@ -263,6 +266,7 @@
 <h2>Chi tratta i tuoi dati</h2>
 <ul>
 <li><strong>Supabase</strong> (database, accesso e funzioni server, ospitato in Canada).</li>
+<li><strong>PostHog</strong> (solo questo sito web, non l’app): conta le visite alle pagine e il link da cui sei arrivato, come i tag di campagna (utm_source, utm_campaign). Nessun cookie, nulla viene salvato sul tuo dispositivo, nessun clic o testo digitato viene registrato e il resto dell’indirizzo viene scartato. Non viene contato nulla se il browser invia Do Not Track.</li>
 <li><strong>API Google Gemini</strong> (risposte IA). Le richieste passano dal nostro account API a pagamento; in base a quei termini, Google non le usa per addestrare i suoi modelli.</li>
 <li><strong>RevenueCat</strong> e <strong>Apple</strong> (acquisti in-app e abbonamenti).</li>
 <li><strong>Servizio di notifiche push di Apple</strong> (consegna delle spintarelle degli amici, se consenti le notifiche).</li>
@@ -317,7 +321,7 @@
     'priv.title': `Pulse · Política de Privacidade`,
     'priv.h1': `<span>PULSE</span> Privacidade`,
     'priv.body': `
-<p class="dim">Última atualização: 22 de outubro de 2026 · Tradução de cortesia; em caso de diferença, vale a versão em inglês.</p>
+<p class="dim">Última atualização: 26 de novembro de 2026 · Tradução de cortesia; em caso de diferença, vale a versão em inglês.</p>
 <p>Esta política explica o que o app Pulse ("Pulse", "nós") coleta, por quê e o que você pode fazer a respeito. Contato: ${MAIL}.</p>
 <h2>O que coletamos</h2>
 <ul>
@@ -339,6 +343,7 @@
 <h2>Quem trata seus dados</h2>
 <ul>
 <li><strong>Supabase</strong> (banco de dados, login e funções de servidor, hospedado no Canadá).</li>
+<li><strong>PostHog</strong> (apenas este site, não o app): conta as visitas às páginas e qual link trouxe você até aqui, como as tags de campanha (utm_source, utm_campaign). Sem cookies, nada é salvo no seu dispositivo, nenhum clique ou digitação é registrado e o resto do endereço é descartado. Nada é contado se o seu navegador enviar Do Not Track.</li>
 <li><strong>API Google Gemini</strong> (respostas de IA). Os pedidos passam pela nossa conta paga da API; por esses termos, o Google não os usa para treinar seus modelos.</li>
 <li><strong>RevenueCat</strong> e <strong>Apple</strong> (compras no app e assinaturas).</li>
 <li><strong>Serviço de notificações push da Apple</strong> (entrega de toques dos amigos, se você permitir notificações).</li>
